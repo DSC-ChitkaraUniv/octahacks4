@@ -9,23 +9,52 @@
     <title>Octahacks 4.0</title>
 </head>
 
-<body>
+<body class="body">
     <nav id="nav_bar">
-        <div id="octahacks_logo">
+        <div class="octahacks_logo">
             <img src="./assets/media/octahcks_logo.png" alt="logo">
         </div>
-        <div id="nav_links">
-            <a href="">Home</a>
-            <a href="">Tracks</a>
-            <a href="">Prizes</a>
-            <a href="">Sponsors</a>
-            <a href="">FAQ</a>
-            <a href="">Contact</a>
+        <div class="nav_links">
+            <a href="#">Home</a>
+            <a href="#">Tracks</a>
+            <a href="#">Prizes</a>
+            <a href="#">Sponsors</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
         </div>
-        <div id="gdsc_logo">
+        <div class="gdsc_logo">
             <img src="./assets/media/GDSClogo.png" alt="">
         </div>
     </nav>
+    <nav id="nav_bar_mobile">
+        <div class="octahacks_logo">
+            <img src="./assets/media/octahcks_logo.png" alt="logo">
+        </div>
+        <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+            <div class="ham-box">
+                <div class="ham-box-inner"></div>
+            </div>
+        </button>
+    </nav>
+    <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
+        <nav>
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tracks</a>
+                </li>
+                <li><a href="#">Prizes</a></li>
+                <li><a href="#">Sponsors</a>
+                </li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a>
+                </li>
+            </ol>
+            <img src="./assets/media/GDSClogo.png" alt="">
+        </nav>
+    </aside>
+    <div id="content"></div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
