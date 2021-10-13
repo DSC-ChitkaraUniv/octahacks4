@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #121217;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+}
+
+#nav_bar {
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	padding: 10px 60px;
+	padding-right: 0;
+}
+#octahacks_logo {
+	width: 8%;
+}
+#nav_links {
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
+}
+#nav_links a {
+	font-size: 1.3rem;
+	color: #6d6d6d;
+	margin-left: 20px;
+	transition: all 0.5s ease;
+}
+#nav_links a:hover {
+	color: #fff;
+}
+#gdsc_logo {
+	width: 20%;
+}
