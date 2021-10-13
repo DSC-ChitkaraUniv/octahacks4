@@ -214,6 +214,30 @@ aside.menubar {
 #landing .right.landing_vector {
 	transform: scale(1.2);
 }
+#landing .buttons {
+	display: flex;
+}
+#landing .buttons .devfolio_apply_button {
+	height: 44px;
+	width: 312px;
+}
+#landing .buttons .discord_button {
+	width: 55px;
+	background-color: #fff;
+	height: 44px;
+	margin-left: 15px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+#landing .buttons .discord_button img {
+	transform: scale(1.6);
+	filter: opacity(0.85);
+}
+/* style="height: 44px; width: 312px" */
 
 /* ------------------------------- Media Queries ----------------------------- */
 @media (max-width: 1200px) {
