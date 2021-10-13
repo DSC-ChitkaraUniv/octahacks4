@@ -242,6 +242,7 @@ aside.menubar {
 }
 /* style="height: 44px; width: 312px" */
 
+
 /* ------------------------------- Media Queries ----------------------------- */
 @media (max-width: 1200px) {
 	/* Navbar Section */
@@ -262,7 +263,8 @@ aside.menubar {
 		width: 80%;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) { 
+	/* hiccup in the nav from 850 to 786 */
 	/* Navbar Section */
 	#nav_bar {
 		display: none;
