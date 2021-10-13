@@ -485,4 +485,22 @@ aside.menubar {
 		bottom: 0;
 		left: 5px;
 	}
+
+	/* Landing Section */
+	#landing .right {
+		display: none;
+	}
+	#landing .left {
+		width: 100%;
+	}
+	#landing .left .buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+	#landing .left .buttons iframe {
+		margin-bottom: 25px !important;
+	}
+	/* #landing .left .buttons .discord_button {
+		di
+	} */
 }
