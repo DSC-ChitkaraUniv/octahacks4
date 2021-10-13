@@ -8,12 +8,13 @@ body {
 body.blur {
 	overflow: hidden;
 }
-body.blur #content > *,
-body.blur #nav_bar_mobile .octahacks_logo {
+body.blur #content > * {
 	filter: blur(5px) brightness(0.7);
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-	pointer-events: none;
-	user-select: none;
+}
+body.blur #nav_bar_mobile .octahacks_logo {
+	filter: blur(2px) brightness(0.7);
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 a {
 	text-decoration: none;
@@ -68,6 +69,21 @@ aside.menubar {
 .hamburger {
 	display: none;
 	margin-top: -10px;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+	margin-right: -15px;
+	padding: 15px;
+	border: 0px;
+	background-color: transparent;
+	color: inherit;
+	text-transform: none;
+	transition-timing-function: linear;
+	transition-duration: 0.15s;
+	transition-property: opacity, filter;
 }
 .hamburger .ham-box {
 	display: inline-block;
@@ -135,21 +151,6 @@ aside.menubar {
 
 	.hamburger {
 		display: flex;
-		-webkit-box-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		align-items: center;
-		position: relative;
-		z-index: 10;
-		margin-right: -15px;
-		padding: 15px;
-		border: 0px;
-		background-color: transparent;
-		color: inherit;
-		text-transform: none;
-		transition-timing-function: linear;
-		transition-duration: 0.15s;
-		transition-property: opacity, filter;
 	}
 	.hamburger-close .ham-box {
 		display: inline-block;
@@ -172,14 +173,11 @@ aside.menubar {
 		width: 100%;
 		top: 0px;
 		opacity: 0;
-		transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
 	}
 	.hamburger-close .ham-box-inner::after {
 		width: 100%;
 		bottom: 0px;
 		transform: rotate(90deg);
-		transition: bottom 0.1s ease-out,
-			transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 	}
 	.hamburger-close .ham-box-inner::before,
 	.hamburger-close .ham-box-inner::after {
@@ -197,7 +195,7 @@ aside.menubar {
 		transition-property: transform;
 	}
 	/* Aside Section */
-	.menubar {
+	aside.menubar {
 		display: flex;
 		-webkit-box-pack: center;
 		justify-content: center;
@@ -236,7 +234,7 @@ aside.menubar {
 		transition-duration: 0.15s;
 		transition-property: opacity, filter;
 	}
-	.menubar-open {
+	aside.menubar-open {
 		display: flex;
 		-webkit-box-pack: center;
 		justify-content: center;
@@ -257,13 +255,13 @@ aside.menubar {
 		visibility: visible;
 		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
-	.menubar-open ol a:hover,
-	.menubar-open ol a:active,
-	.menubar-open ol a:focus {
+	aside.menubar-open ol a:hover,
+	aside.menubar-open ol a:active,
+	aside.menubar-open ol a:focus {
 		color: #ee6c4d;
 		outline: 0px;
 	}
-	.menubar nav {
+	aside.menubar nav {
 		display: flex;
 		-webkit-box-pack: justify;
 		justify-content: space-between;
@@ -274,26 +272,26 @@ aside.menubar {
 		color: #6d6d6d;
 		text-align: center;
 	}
-	.menubar ol {
+	aside.menubar ol {
 		padding: 0px;
 		margin: 0px;
 		list-style: none;
 		width: 100%;
 	}
-	.menubar ol li {
+	aside.menubar ol li {
 		position: relative;
 		margin: 0px auto 20px;
 		counter-increment: item 1;
 		font-size: clamp(14px, 4vw, 18px);
 	}
-	.menubar ol li::before {
+	aside.menubar ol li::before {
 		content: '0' counter(item) '.';
 		display: block;
 		margin-bottom: 5px;
 		color: #6d6d6d;
 		font-size: 14px;
 	}
-	.menubar ol a {
+	aside.menubar ol a {
 		display: inline-block;
 		text-decoration: none;
 		text-decoration-skip-ink: auto;
@@ -303,7 +301,7 @@ aside.menubar {
 		width: 100%;
 		padding: 3px 20px 20px;
 	}
-	.menubar .resume-link {
+	aside.menubar .resume-link {
 		color: #ee6c4d;
 		background-color: transparent;
 		border: 1px solid #6d6d6d;
@@ -317,7 +315,7 @@ aside.menubar {
 		margin: 10% auto 0px;
 		width: max-content;
 	}
-	.menubar-open nav {
+	aside.menubar-open nav {
 		display: flex;
 		-webkit-box-pack: justify;
 		justify-content: space-between;
@@ -328,26 +326,26 @@ aside.menubar {
 		color: #6d6d6d;
 		text-align: center;
 	}
-	.menubar-open ol {
+	aside.menubar-open ol {
 		padding: 0px;
 		margin: 0px;
 		list-style: none;
 		width: 100%;
 	}
-	.menubar-open ol li {
+	aside.menubar-open ol li {
 		position: relative;
 		margin: 0px auto 20px;
 		counter-increment: item 1;
 		font-size: clamp(14px, 4vw, 18px);
 	}
-	.menubar-open ol li::before {
+	aside.menubar-open ol li::before {
 		content: '0' counter(item) '.';
 		display: block;
 		margin-bottom: 5px;
 		color: #ee6c4d;
 		font-size: 14px;
 	}
-	.menubar-open ol a {
+	aside.menubar-open ol a {
 		display: inline-block;
 		text-decoration: none;
 		text-decoration-skip-ink: auto;
@@ -356,5 +354,13 @@ aside.menubar {
 		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 		width: 100%;
 		padding: 3px 20px 20px;
+	}
+	/* aside.menubar {
+		position: relative;
+	} */
+	aside.menubar .gdsc_logo {
+		position: absolute;
+		bottom: 0;
+		left: 5px;
 	}
 }

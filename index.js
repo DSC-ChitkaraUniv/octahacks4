@@ -5,7 +5,7 @@ function toggleMenubar(e) {
 		e.classList.remove('hamburger');
 		e.classList.add('hamburger-close');
 
-		asideMenu.classList.remove('menubar');
+		// asideMenu.classList.remove('menubar');
 		asideMenu.classList.add('menubar-open');
 		asideMenu.setAttribute('aria-hidden', 'false');
 		asideMenu.setAttribute('tabindex', '1');
@@ -16,7 +16,7 @@ function toggleMenubar(e) {
 		e.classList.add('hamburger');
 
 		asideMenu.classList.remove('menubar-open');
-		asideMenu.classList.add('menubar');
+		// asideMenu.classList.add('menubar');
 		asideMenu.setAttribute('aria-hidden', 'true');
 		asideMenu.setAttribute('tabindex', '-1');
 
