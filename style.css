@@ -209,8 +209,8 @@ aside.menubar {
 		width: min(75vw, 400px);
 		height: 100vh;
 		outline: 0px;
-		background-color: #121217;
-		box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
+		background-color: #0b0b1b;
+		box-shadow: -10px 0px 30px -15px rgba(99, 99, 127, 0.5);
 		z-index: 9;
 		transform: translateX(100vw);
 		visibility: hidden;
@@ -248,8 +248,8 @@ aside.menubar {
 		width: min(75vw, 400px);
 		height: 100vh;
 		outline: 0px;
-		background-color: #121217;
-		box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
+		background-color: #0b0b1b;
+		box-shadow: -10px 0px 30px -15px rgba(99, 99, 127, 0.5);
 		z-index: 9;
 		transform: translateX(0vw);
 		visibility: visible;
