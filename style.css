@@ -3,6 +3,7 @@
 }
 body {
 	background-color: #121217;
+	color: #fff;
 	font-family: sans-serif;
 }
 body.blur {
@@ -130,6 +131,90 @@ aside.menubar {
 	transition: bottom 0.1s ease-in 0.25s;
 }
 
+/* ------------------------------ Landing Section --------------- */
+#landing {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+}
+#landing .left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#landing .right {
+	width: 50%;
+}
+#landing .left h1 {
+	font-size: 3.8rem;
+	/* font-weight: 800; */
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+#landing .left h3 {
+	font-size: 1.2rem;
+	margin-top: 5px;
+}
+#landing .left p {
+	color: #757575;
+	text-align: justify;
+}
+#landing .calendar {
+	background-color: #292c36;
+	width: 62%;
+	border-radius: 8px;
+	padding: 10px 15px;
+	padding-bottom: 25px;
+}
+#landing .calendar .top span {
+	display: inline-block;
+}
+#landing .calendar .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #929398;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+#landing .calendar .top > span {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+#landing .calendar .top > div > span {
+	color: #929398 !important;
+}
+#landing .calendar .middle span {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+#landing .calendar .middle > span:first-of-type {
+	background-color: #405167;
+	border-radius: 25px;
+	padding: 10px 15px;
+	padding-right: 5px;
+	margin-right: 8px;
+}
+#landing .calendar .middle > span > span:nth-child(3),
+#landing .calendar .middle > span > span:nth-child(4),
+#landing .calendar .middle > span > span:nth-child(5) {
+	background-color: #71a0ce;
+	border-radius: 100%;
+	padding: 8px;
+}
+#landing .calendar .bottom {
+	color: #5d5e60;
+	font-size: 0.6rem;
+	font-weight: 600;
+	margin-top: 20px;
+}
+#landing .right.landing_vector {
+	transform: scale(1.2);
+}
+
 /* ------------------------------- Media Queries ----------------------------- */
 @media (max-width: 1200px) {
 	/* Navbar Section */
@@ -138,6 +223,16 @@ aside.menubar {
 	}
 	#nav_bar .gdsc_logo {
 		width: 30%;
+	}
+	/* Landing Section */
+	#landing .calendar {
+		width: 64%;
+	}
+}
+@media (max-width: 1080px) {
+	/* Landing Section */
+	#landing .calendar {
+		width: 80%;
 	}
 }
 @media (max-width: 768px) {
