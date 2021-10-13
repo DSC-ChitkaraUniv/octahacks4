@@ -241,7 +241,11 @@ aside.menubar {
 	filter: opacity(0.85);
 }
 /* style="height: 44px; width: 312px" */
-
+#landing  .left  .calendar  .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ------------------------------- Media Queries ----------------------------- */
 @media (max-width: 1200px) {
@@ -506,3 +510,21 @@ aside.menubar {
 		di
 	} */
 }
+
+@media screen and (max-width: 875px) {
+	#landing .calendar .middle span{
+		font-size: 1.3rem;
+	}	
+}
+@media screen and (max-width: 510px) {
+	#landing .calendar .middle span{
+		font-size: 1.1rem;
+		padding: 5px ;
+	}
+	#landing .calendar .middle span span{
+		padding: 4px!important;
+	}
+}
+/* @media screen and (max-width: 490px) {
+	 re-deign .calendar shifts to next line after this   
+} */
