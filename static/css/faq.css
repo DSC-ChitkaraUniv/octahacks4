@@ -1,0 +1,175 @@
+.faq {
+  margin: 0;
+  padding: 2% 6%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121217;
+  z-index: 1000;
+  height: 100vh;
+}
+
+.description-header {
+  color: #f9f9f9;
+  font-size: 2rem;
+}
+.description-content {
+  color: #676e6b;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+}
+.faq-container {
+  display: flex;
+}
+.faq-left,
+.faq-right {
+  background-color: #282830;
+  padding: 4%;
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+.faq-left {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.faq-right {
+  width: 38%;
+}
+
+.avatar-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.message-container {
+  display: flex;
+  margin-top: 20px;
+}
+.message {
+  background-color: #b6baea;
+  margin-left: 10px;
+  border-radius: 30px;
+  padding: 2% 5%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 80%;
+  color: #121217;
+}
+.accordion {
+  padding: 3%;
+  background-color: #121217;
+  width: 85%;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-top: 25px;
+  position: relative;
+}
+
+.accordion div {
+  color: #676e6b;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #676e6b;
+  cursor: pointer;
+}
+.right-header {
+  color: #f9f9f9;
+  font-size: 1.7rem;
+}
+.right-description {
+  color: #676e6b;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.faq-main {
+  height: 300px;
+  width: 100%;
+}
+.faq-main-container {
+  margin-top: 30px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 900px) {
+  .faq {
+    height: auto;
+  }
+  .faq-container {
+    flex-direction: column-reverse;
+  }
+  .faq-left,
+  .faq-right {
+    width: 100%;
+  }
+}
+.message-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.message-icon i,
+.cross i {
+  color: white;
+  font-size: 1.5rem;
+}
+i:hover {
+  cursor: pointer;
+}
+div#wave {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+div#wave .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background: #303131;
+  animation: wave 1.3s linear infinite;
+}
+div#wave .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+div#wave .dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
+.faq-left::-webkit-scrollbar {
+  display: none;
+}
+.octa-logo {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  height: 30px;
+  width: 30px;
+}
+.octahacks {
+  position: relative;
+}
