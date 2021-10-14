@@ -10,6 +10,7 @@ body {
 	color: #fff;
 	font-family: sans-serif;
 	margin: 0;
+	overflow: hidden;
 }
 body.blur {
 	overflow: hidden;
@@ -284,60 +285,30 @@ aside.menubar {
 
 /* -----------------------------Ticker Section ------------------------*/
 #ticker {
-	height: auto;
-}
-#ticker .ticker-wrap {
-	width: 100%;
-	overflow: hidden;
-	/* height: 14vh; */
 	background-color: #17171d;
-	padding-left: 100%;
-	box-sizing: content-box;
+	height: 15vh;
 }
-#ticker .ticker-wrap .ticker {
+#ticker .ticker_wrap {
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	animation: ticker 20s linear infinite;
+}
+#ticker img {
 	display: inline-block;
-	height: 4rem;
-	line-height: 4rem;
-	white-space: nowrap;
-	padding-right: 100%;
-	box-sizing: content-box;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	-webkit-animation-name: ticker;
-	animation-name: ticker;
-	-webkit-animation-duration: 30s;
-	animation-duration: 30s;
+	margin-right: 100px;
+	width: 12%;
 }
-#ticker .ticker-wrap .ticker__item {
-	display: inline-block;
-	padding: 0 2rem;
-	font-size: 2rem;
-	color: white;
-}
-
-/* ----------------------------------- Keyframes Section ---------------------*/
-@-webkit-keyframes ticker {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		visibility: visible;
-	}
-	100% {
-		-webkit-transform: translate3d(-100%, 0, 0);
-		transform: translate3d(-100%, 0, 0);
-	}
+#ticker img.jetbrains {
+	width: 5%;
 }
 @keyframes ticker {
 	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		visibility: visible;
+		transform: translate(150vw, 0px);
 	}
 	100% {
-		-webkit-transform: translate3d(-100%, 0, 0);
-		transform: translate3d(-100%, 0, 0);
+		transform: translate(-150vw, 0px);
 	}
 }
 
@@ -369,6 +340,24 @@ aside.menubar {
 	}
 	#landing .calendar {
 		width: 80%;
+	}
+	/* Ticker Section */
+	@keyframes ticker {
+		0% {
+			transform: translate(250vw, 0px);
+		}
+		100% {
+			transform: translate(-280vw, 0px);
+		}
+	}
+	#ticker .ticker_wrap {
+		animation: ticker 15s linear infinite;
+	}
+	#ticker img {
+		width: 35%;
+	}
+	#ticker img.jetbrains {
+		width: 15%;
 	}
 }
 @media (max-width: 850px) {
@@ -645,9 +634,17 @@ aside.menubar {
 		display: flex;
 	}
 	/* Ticker Section */
-	/* #ticker {
-		height: 8vh;
-	} */
+	@keyframes ticker {
+		0% {
+			transform: translate(320vw, 0px);
+		}
+		100% {
+			transform: translate(-320vw, 0px);
+		}
+	}
+	#ticker .ticker_wrap {
+		animation: ticker 15s linear infinite;
+	}
 }
 @media (max-width: 480px) {
 	/* #content {
@@ -672,8 +669,20 @@ aside.menubar {
 	}
 
 	/* Ticker Section */
-	#ticker {
-		margin-top: 15px;
+	/* Ticker Section */
+	@keyframes ticker {
+		0% {
+			transform: translate(480vw, 0px);
+		}
+		100% {
+			transform: translate(-440vw, 0px);
+		}
+	}
+	#ticker .ticker_wrap {
+		animation: ticker 15s linear infinite;
+	}
+	#ticker img {
+		width: 50%;
 	}
 }
 @media (max-width: 320px) {

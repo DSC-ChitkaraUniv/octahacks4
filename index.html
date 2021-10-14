@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/faq.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css"> -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/faq.css" />
     <title>Octahacks 4.0</title>
 </head>
 
@@ -109,49 +110,81 @@
             </div>
         </section>
         <section id="ticker">
-            <div class="ticker-wrap">
+            <!-- <div class="ticker-wrap">
                 <div class="ticker">
-                    <div class="ticker__item">Letterpress chambray brunch.</div>
-                    <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical
-                        Helvetica.
+                    <div class="ticker__item"><img src="./assets/Sponsors/1pass.png" alt="1pass" style="width: 50px;">
                     </div>
-                    <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
-                    <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+                    <div class="ticker__item"><img src="./assets/Sponsors/acm.png" alt="acm" style="width: 50px;">
+                    </div>
+                    <div class="ticker__item"><img src="./assets/Sponsors/airmeet.png" alt="airmeet"
+                            style="width: 50px;"></div>
+                    <div class="ticker__item"><img src="./assets/Sponsors/axure.png" alt="axure" style="width: 50px;">
+                    </div>
+                    <div class="ticker__item"><img src="./assets/Sponsors/1passbalsamiq.png" alt="1passbalsamiq"
+                            style="width: 50px;"></div>
+                    <div class="ticker__item"><img src="./assets/Sponsors/bubble.png" alt="bubble" style="width: 50px;">
+                    </div>
                 </div>
+            </div> -->
+            <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
+            <!-- <div id="ticker_wrap"> -->
+
+            <!-- The slider itself is a flex grid -->
+            <!-- <div class="flex -mx-4 img-ticker"> -->
+
+            <!-- Original set of images -->
+            <!-- Each image is a grid column with width 16rem (w-64) and horiztonal margin 1rem (mx-4) -->
+            <div class="ticker_wrap">
+                <img src="./assets/Sponsors/1pass.png" alt="1pass" style="filter: invert();">
+                <img class="jetbrains" src="./assets/Sponsors/jetbrains.png" alt="jetbrains">
+                <img src="./assets/Sponsors/airmeet.png" alt="airmeet">
+                <img src="./assets/Sponsors/axure.png" alt="axure">
+                <img src="./assets/Sponsors/balsamiq.png" alt="1passbalsamiq">
+                <img src="./assets/Sponsors/bugsee.png" alt="bugsee">
+                <img src="./assets/Sponsors/cb.png" alt="cb">
+                <img src="./assets/Sponsors/devfolio.png" alt="devfolio">
+                <img src="./assets/Sponsors/codechef.png" alt="codechef">
+                <img src="./assets/Sponsors/ninja(1).png" alt="ninja">
+                <img src="./assets/Sponsors/streamyard.png" alt="streamyard">
             </div>
-        </section>
-        <div class="message-icon">
-            <i class="fa-solid fa-message" id="message-box"></i>
+
+            <!-- Copy set of images -->
+
+            <!-- </div> -->
+    </div>
+    </section>
+    <div class="message-icon">
+        <i class="fa-solid fa-message" id="message-box"></i>
+    </div>
+    <div class="faq">
+        <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
+        <div class="description">
+            <h1 class="description-header">Have a question?</h1>
+            <div class="description-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+                suscipit magni a ad quisquam aut dolorum! Maxime dolorem adipisci
+                error consequuntur neque recusandae vel, veritatis voluptates ipsam
+                magni pariatur dolorum.
+            </div>
         </div>
-        <div class="faq">
-            <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
-            <div class="description">
-                <h1 class="description-header">Have a question?</h1>
-                <div class="description-content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
-                    suscipit magni a ad quisquam aut dolorum! Maxime dolorem adipisci
-                    error consequuntur neque recusandae vel, veritatis voluptates ipsam
-                    magni pariatur dolorum.
+        <div class="faq-container">
+            <div class="faq-left"></div>
+            <div class="faq-right">
+                <div>
+                    <div class="right-header">Want to reach out to us?</div>
+                    <div class="right-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Inventore consectetur possimus iste odit sunt ipsa vero fugit
+                        doloremque ea. Facilis eum commodi qui cupiditate voluptas!
+                        Aspernatur repellendus nisi quod dolorum?
+                    </div>
                 </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-left"></div>
-                <div class="faq-right">
-                    <div>
-                        <div class="right-header">Want to reach out to us?</div>
-                        <div class="right-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Inventore consectetur possimus iste odit sunt ipsa vero fugit
-                            doloremque ea. Facilis eum commodi qui cupiditate voluptas!
-                            Aspernatur repellendus nisi quod dolorum?
-                        </div>
-                    </div>
-                    <div class="faq-main-container">
-                        <img src="assets/media/FAQ_main.png" class="faq-main" />
-                    </div>
+                <div class="faq-main-container">
+                    <img src="assets/media/FAQ_main.png" class="faq-main" />
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="static/js/index.js"></script>
