@@ -1,6 +1,17 @@
 * {
 	box-sizing: border-box;
 }
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #5f676e;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #121217;
+	height: 100px;
+}
 html,
 body {
 	overflow-x: hidden;
@@ -599,7 +610,7 @@ aside.menubar {
 	/* Landing Section */
 	#landing {
 		padding-top: 0;
-		min-height: 75vh;
+		min-height: 70vh;
 	}
 	#landing .right {
 		width: 0;
@@ -689,6 +700,9 @@ aside.menubar {
 	/* Landing Section */
 	#landing {
 		padding-top: 8px;
+	}
+	#landing .left .calendar span {
+		font-size: 0.8rem;
 	}
 	#landing .left .buttons iframe,
 	#landing .left .buttons .discord_button_mobile {
