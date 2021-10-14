@@ -1,10 +1,15 @@
 * {
 	box-sizing: border-box;
 }
+html,
+body {
+	overflow-x: hidden;
+}
 body {
 	background-color: #121217;
 	color: #fff;
 	font-family: sans-serif;
+	margin: 0;
 }
 body.blur {
 	overflow: hidden;
@@ -28,13 +33,14 @@ img {
 /* -------------------------------- Navbar Section ------------------------------------ */
 #nav_bar {
 	display: flex;
-	height: 80px;
+	height: 15vh;
 	justify-content: space-between;
 	padding: 10px 60px;
 	padding-right: 0;
 }
 #nav_bar .octahacks_logo {
 	width: 8%;
+	display: flex;
 }
 #nav_bar .nav_links {
 	width: 50%;
@@ -57,7 +63,7 @@ img {
 /* ------------ Mobile Navbar -------- */
 #nav_bar_mobile {
 	display: none;
-	/* height: 80px; */
+	height: 15vh;
 	justify-content: space-between;
 	padding: 10px 5px;
 	width: 99%;
@@ -66,7 +72,8 @@ aside.menubar {
 	display: none;
 }
 #nav_bar_mobile .octahacks_logo {
-	width: 20%;
+	width: 25%;
+	display: flex;
 }
 .hamburger {
 	display: none;
@@ -127,18 +134,26 @@ aside.menubar {
 }
 .hamburger .ham-box-inner::after {
 	width: 80%;
-	bottom: -10px;
-	transform: rotate(0deg);
-	transition: bottom 0.1s ease-in 0.25s;
+	top: 10px;
+	opacity: 1;
+	transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
 }
 
 /* ------------------------------ Landing Section --------------- */
-#landing {
+#home {
+	display: flex;
 	min-height: 80vh;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+}
+#landing {
+	min-height: 78vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 80px;
+	padding: 0px 80px 0 80px;
 }
 #landing .left {
 	width: 50%;
@@ -241,7 +256,6 @@ aside.menubar {
 	width: 55px;
 	background-color: #fff;
 	height: 44px;
-	margin-left: 15px;
 	border-radius: 4px;
 	display: flex;
 	justify-content: center;
@@ -268,11 +282,73 @@ aside.menubar {
 	align-items: center;
 }
 
+/* -----------------------------Ticker Section ------------------------*/
+#ticker {
+	height: auto;
+}
+#ticker .ticker-wrap {
+	width: 100%;
+	overflow: hidden;
+	/* height: 14vh; */
+	background-color: #17171d;
+	padding-left: 100%;
+	box-sizing: content-box;
+}
+#ticker .ticker-wrap .ticker {
+	display: inline-block;
+	height: 4rem;
+	line-height: 4rem;
+	white-space: nowrap;
+	padding-right: 100%;
+	box-sizing: content-box;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: ticker;
+	animation-name: ticker;
+	-webkit-animation-duration: 30s;
+	animation-duration: 30s;
+}
+#ticker .ticker-wrap .ticker__item {
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 2rem;
+	color: white;
+}
+
+/* ----------------------------------- Keyframes Section ---------------------*/
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
 /* ------------------------------- Media Queries ----------------------------- */
 @media (max-width: 1200px) {
 	/* Navbar Section */
 	#nav_bar .nav_links {
 		width: 80%;
+	}
+	#nav_bar .octahacks_logo {
+		width: 12%;
 	}
 	#nav_bar .gdsc_logo {
 		width: 30%;
@@ -283,7 +359,14 @@ aside.menubar {
 	}
 }
 @media (max-width: 1080px) {
+	/* Navbar Section */
+	#nav_bar .octahacks_logo {
+		width: 23%;
+	}
 	/* Landing Section */
+	#landing {
+		min-height: 80vh;
+	}
 	#landing .calendar {
 		width: 80%;
 	}
@@ -342,6 +425,7 @@ aside.menubar {
 		transition-timing-function: ease;
 		transition-duration: 0.15s;
 		transition-property: transform;
+		top: 0;
 	}
 	/* Aside Section */
 	aside.menubar {
@@ -522,14 +606,30 @@ aside.menubar {
 		width: 60%;
 	}
 }
-@media (max-width: 640px) {
+@media (max-width: 540px) {
 	/* Landing Section */
+	#landing {
+		padding-top: 0;
+		min-height: 75vh;
+	}
 	#landing .right {
 		width: 0;
 		display: none;
 	}
 	#landing .left {
 		width: 100%;
+	}
+	#landing .left h1 {
+		font-size: 2.2rem;
+	}
+	#landing .left h3 {
+		font-size: 0.8rem;
+	}
+	#landing .left .calendar {
+		padding-bottom: 5px;
+	}
+	#landing .left .calendar .bottom {
+		margin-top: 10px;
 	}
 	#landing .left .buttons {
 		flex-direction: column;
@@ -543,6 +643,50 @@ aside.menubar {
 	}
 	#landing .left .buttons .discord_button_mobile {
 		display: flex;
+	}
+	/* Ticker Section */
+	/* #ticker {
+		height: 8vh;
+	} */
+}
+@media (max-width: 480px) {
+	/* #content {
+		min-height: 110vh;
+	} */
+	/* Landing Section */
+	#landing {
+		padding-top: 15px;
+	}
+	#landing .left h1 {
+		font-size: 2rem;
+		font-weight: 200;
+	}
+	#landing .left h3 {
+		font-size: 0.6rem;
+	}
+	#landing .left p {
+		font-size: 14px;
+	}
+	#landing .left .calendar {
+		width: 100%;
+	}
+
+	/* Ticker Section */
+	#ticker {
+		margin-top: 15px;
+	}
+}
+@media (max-width: 320px) {
+	/* Landing Section */
+	#landing {
+		padding-top: 8px;
+	}
+	#landing .left .buttons iframe,
+	#landing .left .buttons .discord_button_mobile {
+		width: 250px !important;
+	}
+	#landing .left .buttons iframe {
+		margin-bottom: 10px !important;
 	}
 }
 /* @media screen and (max-width: 875px) {
