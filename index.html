@@ -1,116 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/faq.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Octahacks 4.0</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <nav id="nav_bar">
-        <div class="octahacks_logo">
-            <img src="./assets/media/octahcks_logo.png" alt="logo">
-        </div>
-        <div class="nav_links">
-            <a href="#">Home</a>
-            <a href="#">Tracks</a>
-            <a href="#">Prizes</a>
-            <a href="#">Sponsors</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="gdsc_logo">
-            <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet">
-        </div>
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <div class="nav_links">
+        <a href="#">Home</a>
+        <a href="#">Tracks</a>
+        <a href="#">Prizes</a>
+        <a href="#">Sponsors</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="gdsc_logo">
+        <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
+      </div>
     </nav>
     <nav id="nav_bar_mobile">
-        <div class="octahacks_logo">
-            <img src="./assets/media/octahcks_logo.png" alt="logo">
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+        <div class="ham-box">
+          <div class="ham-box-inner"></div>
         </div>
-        <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
-            <div class="ham-box">
-                <div class="ham-box-inner"></div>
-            </div>
-        </button>
+      </button>
     </nav>
     <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
-        <nav>
-            <ol>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tracks</a>
-                </li>
-                <li><a href="#">Prizes</a></li>
-                <li><a href="#">Sponsors</a>
-                </li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a>
-                </li>
-            </ol>
-            <img class="gdsc_logo" src="./assets/media/GDSClogo.png" alt="gdsc_cuiet">
-        </nav>
+      <nav>
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Prizes</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ol>
+        <img
+          class="gdsc_logo"
+          src="./assets/media/GDSClogo.png"
+          alt="gdsc_cuiet"
+        />
+      </nav>
     </aside>
     <div id="content">
-        <section id="landing">
-            <div class="left">
-                <h1>OctaHacks 4.0</h1>
-                <h3>"TAGLINE FOR THE HACKATHON"</h3>
-                <div class="calendar">
-                    <div class="top">
-                        <span>November 2021</span>
-                        <div>
-                            <span class="material-icons-outlined">
-                                chevron_left
-                            </span>
-                            <span class="material-icons-outlined">
-                                chevron_right
-                            </span>
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <span>
-                            <span>11</span>
-                            <span>12</span>
-                            <span>13</span>
-                            <span>14</span>
-                            <span>15</span>
-                        </span>
-                        <span>16</span>
-                    </div>
-                    <div class="bottom">
-                        Prepare to be amazed
-                    </div>
-                </div>
-                <p>OctaHacks is the annual flagship event of GDSC, Chitkara University, where innovators get an
-                    opportunity to merge their creative ideas with their technical skills to build something exemplary.
-                    Expect more than 36 hours of inspiring panel discussions, working and collaborating on futuristic
-                    and empowering tech products, networking opportunities</p>
-                <div class="buttons">
-                    <div class="devfolio_apply_button apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG"
-                        data-button-theme="dark-inverted"></div>
-                    <a href="#">
-                        <div class="discord_button">
-                            <img src="./assets/media/discord_inner_logo.png" alt="discord">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="discord_button_mobile">
-                            <img src="./assets/media/discord_mobile_logo.png" alt="discord">
-                        </div>
-                    </a>
-                </div>
+      <section id="landing">
+        <div class="left">
+          <h1>OctaHacks 4.0</h1>
+          <h3>"TAGLINE FOR THE HACKATHON"</h3>
+          <div class="calendar">
+            <div class="top">
+              <span>November 2021</span>
+              <div>
+                <span class="material-icons-outlined"> chevron_left </span>
+                <span class="material-icons-outlined"> chevron_right </span>
+              </div>
             </div>
-            <div class="right landing_vector">
-                <img src="./assets/media/Home_Banner_1.png" alt="Octahacks 4.0">
+            <div class="middle">
+              <span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+              </span>
+              <span>16</span>
             </div>
-        </section>
+            <div class="bottom">Prepare to be amazed</div>
+          </div>
+          <p>
+            OctaHacks is the annual flagship event of GDSC, Chitkara University,
+            where innovators get an opportunity to merge their creative ideas
+            with their technical skills to build something exemplary. Expect
+            more than 36 hours of inspiring panel discussions, working and
+            collaborating on futuristic and empowering tech products, networking
+            opportunities
+          </p>
+          <div class="buttons">
+            <div
+              class="devfolio_apply_button apply-button"
+              data-hackathon-slug="YOUR-HACKATHON-SLUG"
+              data-button-theme="dark-inverted"
+            ></div>
+            <a href="#">
+              <div class="discord_button">
+                <img
+                  src="./assets/media/discord_inner_logo.png"
+                  alt="discord"
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div class="discord_button_mobile">
+                <img
+                  src="./assets/media/discord_mobile_logo.png"
+                  alt="discord"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right landing_vector">
+          <img src="./assets/media/Home_Banner_1.png" alt="Octahacks 4.0" />
+        </div>
+      </section>
     </div>
-
+    <div class="message-icon">
+      <i class="fa-solid fa-message" id="message-box"></i>
+    </div>
+    <div class="faq">
+      <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
+      <div class="description">
+        <h1 class="description-header">Have a question?</h1>
+        <div class="description-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+          suscipit magni a ad quisquam aut dolorum! Maxime dolorem adipisci
+          error consequuntur neque recusandae vel, veritatis voluptates ipsam
+          magni pariatur dolorum.
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-left"></div>
+        <div class="faq-right">
+          <div>
+            <div class="right-header">Want to reach out to us?</div>
+            <div class="right-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore consectetur possimus iste odit sunt ipsa vero fugit
+              doloremque ea. Facilis eum commodi qui cupiditate voluptas!
+              Aspernatur repellendus nisi quod dolorum?
+            </div>
+          </div>
+          <div class="faq-main-container">
+            <img src="assets/media/FAQ_main.png" class="faq-main" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="static/js/index.js"></script>
+    <script src="static/js/script.js"></script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-</body>
-
+  </body>
 </html>
