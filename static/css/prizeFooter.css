@@ -66,6 +66,10 @@
 	padding: 20px;
 	width: 430px;
 }
+.prize_section_sponser {
+	height: 90px !important;
+	width: 120px !important;
+}
 .footer_section_1_content {
 	display: flex;
 	align-items:flex-start;
