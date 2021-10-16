@@ -120,4 +120,74 @@ margin: auto;
 		justify-content: space-between;
 		align-items: center;
 	}
+	.footer_section_3 p {
+		font-size: 10px;
+	}
+	.footer_section_3 img {
+		width: 180px;
+	}
+}
+@media (max-width:692px)
+{
+	.prize_section_card h1{
+		font-size: 25px;
+	}
+	.prize_section_card p {
+		font-size: 15px;
+	}
+			.footer_section_1 {
+				margin: 10px auto 20px auto;
+				max-width: 500px;
+				width: 500px;
+			}
+}
+@media (max-width:590px)
+{
+			.footer_section_1 {
+				max-width: 410px;
+				width: 410px;
+			}
+}
+@media (max-width:472px)
+{
+	.prize_section_cards {
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+	.prize_section_card {
+		width: 320px;
+	}
+	.footer_section_1 {
+		max-width: 350px;
+		width: 350px;
+	}
+}
+@media (max-width:376px)
+{
+	.prize_section_card {
+		width: 280px;
+	}
+	.footer_section_1 {
+		max-width: 280px;
+		width: 280px;
+	}
+	.footer_section_3{
+		display: block;
+		padding-left: 80px;
+	}
+}
+@media (max-width:327px)
+{
+	.prize_section_card {
+		width: 230px;
+	}
+	.footer_section_1 {
+		max-width: 250px;
+		width: 250px;
+	}
+	.footer_section_3{
+		display: block;
+		padding-left: 30px;
+	}
 }
