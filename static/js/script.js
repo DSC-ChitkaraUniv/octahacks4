@@ -1,12 +1,12 @@
 const answers = [
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?",
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
 ];
 const message1 = `<div class="message-container">
             <div class="avatar">
@@ -43,46 +43,50 @@ const waitMessage = `<div class="message-container">
 </div></div>
           </div>`;
 const messageTemplate = function (index) {
-  return `<div class="message-container">
+	return `<div class="message-container">
             <div class="avatar">
               <img src="assets/media/FAQ_display.jpg" class="avatar-image" />
             </div>
             <div class="message">${answers[index]}</div>
           </div>`;
 };
-document.getElementById("message-box").addEventListener("click", () => {
-  document.getElementsByClassName("faq")[0].style.display = "block";
-  document.getElementById("message-box").style.display = "none";
-  let left = document.getElementsByClassName("faq-left")[0];
+document.getElementById('message-box').addEventListener('click', () => {
+	document.querySelector('body').style.height = '100vh';
+	document.querySelector('body').style.overflowY = 'hidden';
+	document.getElementsByClassName('faq')[0].style.display = 'block';
+	document.getElementById('message-box').style.display = 'none';
+	let left = document.getElementsByClassName('faq-left')[0];
 
-  left.insertAdjacentHTML("beforeEnd", waitMessage);
-  setTimeout(() => {
-    left.removeChild(left.lastChild);
-    left.insertAdjacentHTML("beforeEnd", message1);
-    left.insertAdjacentHTML("beforeEnd", accordian);
-  }, 1500);
+	left.insertAdjacentHTML('beforeEnd', waitMessage);
+	setTimeout(() => {
+		left.removeChild(left.lastChild);
+		left.insertAdjacentHTML('beforeEnd', message1);
+		left.insertAdjacentHTML('beforeEnd', accordian);
+	}, 1500);
 });
-document.getElementById("close").addEventListener("click", () => {
-  document.getElementsByClassName("faq")[0].style.display = "none";
-  document.getElementById("message-box").style.display = "block";
-  document.getElementsByClassName("faq-left")[0].innerHTML = "";
+document.getElementById('close').addEventListener('click', () => {
+	document.querySelector('body').style.overflowY = 'unset';
+	document.querySelector('body').style.height = 'unset';
+	document.getElementsByClassName('faq')[0].style.display = 'none';
+	document.getElementById('message-box').style.display = 'block';
+	document.getElementsByClassName('faq-left')[0].innerHTML = '';
 });
 function answerQuery(e) {
-  let index = e.target.getAttribute("data-index");
-  let left = document.getElementsByClassName("faq-left")[0];
-  left.insertAdjacentHTML("beforeEnd", waitMessage);
-  console.log(left.scrollHeight);
-  left.scrollTop = left.scrollHeight;
-  setTimeout(() => {
-    left.removeChild(left.lastChild);
-    left.insertAdjacentHTML("beforeend", messageTemplate(index));
-    left.scrollTop = left.scrollHeight;
-  }, 1500);
-  setTimeout(() => {
-    left.insertAdjacentHTML("beforeEnd", waitMessage);
-    left.removeChild(left.lastChild);
-    left.insertAdjacentHTML("beforeEnd", message2);
-    left.insertAdjacentHTML("beforeEnd", accordian);
-    left.scrollTop = left.scrollHeight;
-  }, 3000);
+	let index = e.target.getAttribute('data-index');
+	let left = document.getElementsByClassName('faq-left')[0];
+	left.insertAdjacentHTML('beforeEnd', waitMessage);
+	console.log(left.scrollHeight);
+	left.scrollTop = left.scrollHeight;
+	setTimeout(() => {
+		left.removeChild(left.lastChild);
+		left.insertAdjacentHTML('beforeend', messageTemplate(index));
+		left.scrollTop = left.scrollHeight;
+	}, 1500);
+	setTimeout(() => {
+		left.insertAdjacentHTML('beforeEnd', waitMessage);
+		left.removeChild(left.lastChild);
+		left.insertAdjacentHTML('beforeEnd', message2);
+		left.insertAdjacentHTML('beforeEnd', accordian);
+		left.scrollTop = left.scrollHeight;
+	}, 3000);
 }
