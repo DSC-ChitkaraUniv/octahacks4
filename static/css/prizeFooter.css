@@ -1,6 +1,6 @@
 /* prize section */
-.prize_section{
-	font-family: 'Poppins', sans-serif;
+.prize_section {
+	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	max-width: 80vw;
 	margin: auto;
@@ -10,11 +10,14 @@
 	font-size: 25px;
 	font-weight: bolder;
 }
-.prize_section_detail{
+.prize_section_detail {
 	color: #6d6d6d;
 }
 .prize_section_cards {
 	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
 }
 .prize_section_card {
 	max-width: 400px;
@@ -27,7 +30,7 @@
 	margin: 10px;
 	box-shadow: 0 0 80px -10px black;
 }
-.prize_section_cards img{
+.prize_section_cards img {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	width: 400px;
@@ -36,15 +39,15 @@
 
 /* footer */
 .footer_sections {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	width: 80vw;
-	margin:30px auto;
+	margin: 30px auto;
 	display: flex;
 	color: #fff;
 	justify-content: space-between;
 }
 .footer_section {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	width: 80vw;
 	display: flex;
 	justify-content: space-between;
@@ -54,7 +57,7 @@
 	height: 40px;
 }
 .social_icons {
-	color:#747477;
+	color: #747477;
 }
 .social_icons i {
 	font-size: 25px;
@@ -73,12 +76,12 @@
 }
 .footer_section_1_content {
 	display: flex;
-	align-items:flex-start;
+	align-items: flex-start;
 }
 .footer_section_1_content img {
 	margin-right: 10px;
 }
-.footer_section_1_content p{
+.footer_section_1_content p {
 	color: #747477;
 }
 .footer_section h1 {
@@ -90,15 +93,15 @@
 	margin-top: 110px;
 	margin-left: 100px;
 }
-.footer_section_2 a{
-	color: #C2C2B7;
+.footer_section_2 a {
+	color: #c2c2b7;
 }
 .footer_section img {
 	width: 40px;
 }
 .footer_section_3 {
 	width: 80vw;
-	margin:20px auto;
+	margin: 20px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -107,10 +110,10 @@
 	width: 300px;
 }
 /* media queries */
-@media (max-width:768px){
+@media (max-width: 768px) {
 	.footer_section {
-display: block;
-margin: auto;
+		display: block;
+		margin: auto;
 	}
 	.footer_section_1 {
 		margin: 10px auto 20px auto;
@@ -132,29 +135,26 @@ margin: auto;
 		width: 180px;
 	}
 }
-@media (max-width:692px)
-{
-	.prize_section_card h1{
+@media (max-width: 692px) {
+	.prize_section_card h1 {
 		font-size: 25px;
 	}
 	.prize_section_card p {
 		font-size: 15px;
 	}
-			.footer_section_1 {
-				margin: 10px auto 20px auto;
-				max-width: 500px;
-				width: 500px;
-			}
+	.footer_section_1 {
+		margin: 10px auto 20px auto;
+		max-width: 500px;
+		width: 500px;
+	}
 }
-@media (max-width:590px)
-{
-			.footer_section_1 {
-				max-width: 410px;
-				width: 410px;
-			}
+@media (max-width: 590px) {
+	.footer_section_1 {
+		max-width: 410px;
+		width: 410px;
+	}
 }
-@media (max-width:472px)
-{
+@media (max-width: 472px) {
 	.prize_section_cards {
 		display: block;
 		align-items: center;
@@ -168,8 +168,7 @@ margin: auto;
 		width: 350px;
 	}
 }
-@media (max-width:376px)
-{
+@media (max-width: 376px) {
 	.prize_section_card {
 		width: 280px;
 	}
@@ -177,13 +176,12 @@ margin: auto;
 		max-width: 280px;
 		width: 280px;
 	}
-	.footer_section_3{
+	.footer_section_3 {
 		display: block;
 		padding-left: 80px;
 	}
 }
-@media (max-width:327px)
-{
+@media (max-width: 327px) {
 	.prize_section_card {
 		width: 230px;
 	}
@@ -191,7 +189,7 @@ margin: auto;
 		max-width: 250px;
 		width: 250px;
 	}
-	.footer_section_3{
+	.footer_section_3 {
 		display: block;
 		padding-left: 30px;
 	}
