@@ -215,6 +215,12 @@
 	.prize_section_detail {
 		width: 100%;
 	}
+	.prize_section_card.sponsors {
+		padding: 20px 25px;
+	}
+	.prize_section_card .sponsors_img {
+		width: 100%;
+	}
 	.footer_section_1 {
 		max-width: 410px;
 		width: 410px;
