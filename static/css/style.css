@@ -25,6 +25,7 @@ body {
 }
 body.blur {
 	overflow: hidden;
+	height: 100vh;
 }
 body.blur #content > * {
 	filter: blur(5px) brightness(0.7);
@@ -40,6 +41,22 @@ a {
 }
 img {
 	max-width: 100%;
+}
+section {
+	padding: 0px 80px 0 80px;
+}
+p {
+	color: #757575;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 /* -------------------------------- Navbar Section ------------------------------------ */
@@ -165,7 +182,6 @@ aside.menubar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 80px 0 80px;
 }
 #landing .left {
 	width: 50%;
@@ -314,6 +330,84 @@ aside.menubar {
 #ticker img.jetbrains {
 	width: 5%;
 }
+
+/* --------------------------------------- Tracks section --------------------------------------- */
+#tracks {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+}
+#tracks h1 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+#tracks > p {
+	width: 65%;
+	margin-top: 5px;
+	margin-bottom: 50px;
+	padding-left: 10px;
+}
+#tracks #tracks_wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+#tracks #tracks_wrapper > div {
+	width: 42%;
+	/* min-height: 200px; */
+	margin-bottom: 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10px 0 20px;
+}
+#tracks #tracks_wrapper #track1 {
+	background-image: linear-gradient(to right, #92700f, #dfaa13);
+}
+#tracks #tracks_wrapper #track2 {
+	background-image: linear-gradient(to right, #783922, #eb6e40);
+}
+#tracks #tracks_wrapper #track3 {
+	background-image: linear-gradient(to right, #203c57, #5aa0e6);
+}
+#tracks #tracks_wrapper #track4 {
+	background-image: linear-gradient(to right, #38481e, #85b536);
+}
+#tracks #tracks_wrapper #track5 {
+	background-image: linear-gradient(to right, #783923, #eb6e40);
+}
+#tracks #tracks_wrapper #track6 {
+	background-image: linear-gradient(to right, #93710f, #93710f);
+}
+#tracks #tracks_wrapper #track7 {
+	background-image: linear-gradient(to right, #38481f, #85b536);
+}
+#tracks #tracks_wrapper #track8 {
+	background-image: linear-gradient(to right, #213d59, #5aa0e5);
+}
+#tracks #tracks_wrapper > div > div:first-child {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+#tracks #tracks_wrapper > div > div:last-child {
+	width: 45%;
+}
+#tracks #tracks_wrapper > div h1 {
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+#tracks #tracks_wrapper > div p {
+	color: #fff;
+}
+/* ------------------------------- Keyframes Section ------------------------- */
 @keyframes ticker {
 	0% {
 		transform: translate(150vw, 0px);
@@ -594,10 +688,13 @@ aside.menubar {
 		left: 5px;
 	}
 
+	section {
+		padding: 20px 10px 0 10px;
+	}
+
 	/* Landing Section */
 	#landing {
 		width: 98%;
-		padding: 20px 10px 0 10px;
 	}
 	#landing .right {
 		width: 40%;
