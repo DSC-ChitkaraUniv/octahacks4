@@ -420,6 +420,7 @@ aside.menubar {
 	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 20px 10px 0 20px;
 }
 #tracks #tracks_wrapper #track1 {
@@ -489,6 +490,13 @@ aside.menubar {
 	/* Landing Section */
 	#landing .calendar {
 		width: 64%;
+	}
+	/* Tracks Section */
+	#tracks #tracks_wrapper {
+		justify-content: space-between;
+	}
+	#tracks #tracks_wrapper > div {
+		width: 48%;
 	}
 }
 @media (max-width: 1080px) {
@@ -759,6 +767,10 @@ aside.menubar {
 	#landing .left {
 		width: 60%;
 	}
+	/* Tracks Section */
+	#tracks > p {
+		width: 80%;
+	}
 }
 @media (max-width: 540px) {
 	/* Landing Section */
@@ -810,6 +822,16 @@ aside.menubar {
 	#ticker .ticker_wrap {
 		animation: ticker 15s linear infinite;
 	}
+	/* Tracks Section */
+	#tracks > p {
+		width: 100%;
+	}
+	#tracks #tracks_wrapper {
+		justify-content: center;
+	}
+	#tracks #tracks_wrapper > div {
+		width: 90%;
+	}
 }
 @media (max-width: 480px) {
 	/* #content {
@@ -848,6 +870,35 @@ aside.menubar {
 	}
 	#ticker img {
 		width: 50%;
+	}
+	/* Tracks Section */
+	#tracks {
+		margin-top: 10px;
+	}
+	#tracks h1 {
+		margin-bottom: 10px;
+	}
+	#tracks > p {
+		font-size: 0.8rem;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	#tracks #tracks_wrapper > div {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#tracks #tracks_wrapper > div > div:first-child {
+		width: 100%;
+	}
+	#tracks #tracks_wrapper > div > div:last-child {
+		display: none;
+	}
+	#tracks #tracks_wrapper > div h1 {
+		font-size: 1.5rem;
+		margin-bottom: 0;
+	}
+	#tracks #tracks_wrapper > div p {
+		font-size: 0.8rem;
 	}
 }
 @media (max-width: 320px) {
