@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -13,10 +14,16 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/faq.css" />
     <link rel="stylesheet" href="static/css/prizeFooter.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script defer src="static/js/preloader.js"></script>
     <title>Octahacks 4.0</title>
 </head>
 
 <body class="body">
+    <div class="preloader">
+        <div class="word">OCTAHACKS&nbsp;4.0</div>
+        <div class="overlay"></div>
+    </div>
     <nav id="nav_bar">
         <div class="octahacks_logo">
             <img src="./assets/media/octahcks_logo.png" alt="logo" />
@@ -364,6 +371,18 @@
     <script src="static/js/index.js"></script>
     <script src="static/js/script.js"></script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
+    <script>
+        var loader = document.querySelector('.preloader')
+        var body = document.querySelector('body')
+        // window.addEventListener('load', ()=>{
+        //     loader.style.display = 'none'
+        // })
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 2000);
+    </script>
+
 </body>
 
 </html>
