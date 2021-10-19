@@ -412,18 +412,29 @@ aside.menubar {
 }
 #tracks #tracks_wrapper {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 #tracks #tracks_wrapper > div {
-	width: 42%;
+	width: 23%;
 	/* min-height: 200px; */
+	/* margin-right: 2%; */
 	margin-bottom: 50px;
 	border-radius: 10px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 10px 0 20px;
+	justify-content: space-evenly;
+	flex-direction: column;
+	padding: 20px 20px 0 10px;
+	position: relative;
+}
+#tracks #tracks_wrapper > div h1 {
+	text-align: center;
+}
+#tracks #tracks_wrapper > div p {
+	margin: auto;
+}
+#tracks #tracks_wrapper > div:last-child {
+	margin-right: 0;
 }
 #tracks #tracks_wrapper #track1 {
 	background-image: linear-gradient(to right, #92700f, #dfaa13);
@@ -450,14 +461,26 @@ aside.menubar {
 	background-image: linear-gradient(to right, #213d59, #5aa0e5);
 }
 #tracks #tracks_wrapper > div > div:first-child {
-	width: 75%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-bottom: 20px;
 }
+#tracks #tracks_wrapper .img {
+	margin: auto;
+	margin-bottom: 0;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+#tracks #tracks_wrapper img {
+	position: relative;
+	bottom: -5px;
+}
 #tracks #tracks_wrapper > div > div:last-child {
-	width: 45%;
+	width: 80%;
 }
 #tracks #tracks_wrapper > div h1 {
 	font-weight: 600;
@@ -924,7 +947,7 @@ aside.menubar {
 		width: 100%;
 	}
 	#tracks #tracks_wrapper > div > div:last-child {
-		display: none;
+		/* display: none; */
 	}
 	#tracks #tracks_wrapper > div h1 {
 		font-size: 1.5rem;
