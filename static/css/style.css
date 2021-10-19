@@ -43,7 +43,7 @@ img {
 	max-width: 100%;
 }
 section {
-	padding: 0px 180px 0 180px;
+	padding: 0px 120px 0 120px;
 }
 p {
 	color: #757575;
@@ -416,16 +416,17 @@ aside.menubar {
 	flex-wrap: wrap;
 }
 #tracks #tracks_wrapper > div {
-	width: 23%;
+	width: 24%;
 	/* min-height: 200px; */
 	/* margin-right: 2%; */
 	margin-bottom: 50px;
 	border-radius: 10px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-direction: column;
 	padding: 20px 20px 0 10px;
 	position: relative;
+	overflow: hidden;
 }
 #tracks #tracks_wrapper > div h1 {
 	text-align: center;
@@ -465,10 +466,10 @@ aside.menubar {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-bottom: 20px;
 }
 #tracks #tracks_wrapper .img {
 	margin: auto;
+	margin-top: 0;
 	margin-bottom: 0;
 	position: relative;
 	overflow: hidden;
@@ -484,11 +485,12 @@ aside.menubar {
 }
 #tracks #tracks_wrapper > div h1 {
 	font-weight: 600;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	margin-bottom: 20px;
 }
 #tracks #tracks_wrapper > div p {
 	color: #fff;
+	font-size: 0.9rem;
 }
 /* ------------------------------- Keyframes Section ------------------------- */
 @keyframes ticker {
@@ -528,7 +530,7 @@ aside.menubar {
 		justify-content: space-between;
 	}
 	#tracks #tracks_wrapper > div {
-		width: 48%;
+		width: 32%;
 	}
 }
 @media (max-width: 1080px) {
@@ -812,6 +814,9 @@ aside.menubar {
 		width: 60%;
 	}
 	/* Tracks Section */
+	#tracks #tracks_wrapper > div {
+		width: 48%;
+	}
 	#tracks > p {
 		width: 80%;
 	}
