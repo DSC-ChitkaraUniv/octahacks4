@@ -1,0 +1,25 @@
+{
+	"title": "Octahacks 4.0",
+	"$schema": "http://json.schemastore.org/web-manifest",
+	"short_name": "Octahacks 4.0",
+	"name": "Octahacks 4.0 - By GDSC CUIET",
+	"description": "Octahacks 4.0 - By Google Developer Students Club, Chitkara University",
+	"theme_color": "#5f676e",
+	"background_color": "#5f676e",
+	"display": "standalone",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "/index.html",
+	"icons": [
+		{
+			"src": "./assets/icons/icons-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "./assets/icons/icons-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

@@ -5,7 +5,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#5f676e">
+    <meta name="description" content="Octhacks 4.0 - By Google Developer Students Club, Chitkara University" />
+    <meta name="keywords"
+        content="Octahacks 4.0, Octahacks, GDSC, GDSC CUIET, Google Developer Students Club, Google Developer Student Club Chitkara University, Chitkara, Chitkara University, Octahacks Chitkara, Octahacks GDSC CUIET, Octhacks-4.0" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Google Developer Students Club, Chitkara University" />
+
+    <!-- Mainfest File & Favicon -->
+    <link rel="icon" href="./assets/icons/favicon.ico" />
+    <!-- <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png"> -->
+    <link rel="manifest" href="./manifest.json">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -14,8 +28,6 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/faq.css" />
     <link rel="stylesheet" href="static/css/prizeFooter.css" />
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-    <script defer src="static/js/preloader.js"></script>
     <title>Octahacks 4.0</title>
 </head>
 
@@ -393,6 +405,10 @@
     <script src="static/js/index.js"></script>
     <script src="static/js/script.js"></script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script defer async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script defer src="static/js/preloader.js"></script>
+
 
     <script>
         var loader = document.querySelector('.preloader')
@@ -403,6 +419,24 @@
         setTimeout(() => {
             loader.style.display = 'none';
         }, 2000);
+    </script>
+    <!-- ------------ PWA Script -------------------- -->
+    <script>
+        function registerServiceWorker() {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker
+                    .register("./service-worker.js")
+                    .then((reg) => {
+                        console.log("Registration successful", reg);
+                    })
+                    .catch((e) =>
+                        console.error("Error during service worker registration:", e)
+                    );
+            } else {
+                console.warn("Service Worker is not supported");
+            }
+        }
+        registerServiceWorker();
     </script>
 
 </body>
