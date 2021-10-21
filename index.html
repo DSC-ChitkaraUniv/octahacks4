@@ -523,5 +523,10 @@
       }
       registerServiceWorker();
     </script>
+    <script>
+      window.addEventListener("offline", () => {
+        window.location.reload();
+      });
+    </script>
   </body>
 </html>
