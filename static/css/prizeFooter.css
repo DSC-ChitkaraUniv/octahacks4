@@ -1,260 +1,270 @@
 /* prize section */
 .prize_section {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  /* background-color: #731ce687; */
+  border-radius: 22% 80% 0% 0% / 0% 20% 100% 48%;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23D12B03' stroke-width='0.7' stroke-opacity='0.35'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.14'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23740000' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23940000' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23b60000' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23da0000' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23FF1D0F' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
+
 .title {
-	color: #fff;
-	font-size: 2.5rem;
-	font-weight: 400;
-	margin-bottom: 20px;
-	margin-left: 0;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding-top: 30px;
 }
 .prize_section_detail {
-	width: 65%;
-	margin-top: 5px;
-	margin-bottom: 50px;
+  width: 65%;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 .prize_section_cards {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .prize_section_card {
-	width: 30%;
-	background-color: #17171d;
-	border-radius: 10px;
-	color: #fff;
-	text-align: center;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
-	box-shadow: 0 0 80px -10px black;
-	cursor: pointer;
+  width: 30%;
+  background-color: #17171d;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  /* box-shadow: 0 0 80px -10px black;  */
+  cursor: pointer;
 }
 .prize_section_card div.img {
-	max-height: 250px;
-	display: flex;
-	overflow: hidden;
-	cursor: pointer;
+  max-height: 250px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
 }
 .prize_section_card div.img img {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	transition: all 1s ease;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 1s ease;
 }
 .prize_section_card div.img:hover img {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 .prize_section_card h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 .prize_section_card p {
-	color: #fff;
-	font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
 .prize_section_card.sponsors {
-	padding: 40px;
+  padding: 40px;
 }
 .prize_section_card .sponsors_img {
-	width: 70%;
-	margin: auto;
+  width: 70%;
+  margin: auto;
 }
 .prize_section_card.sponsors p {
-	font-size: 1rem;
-	/* font-weight: 600; */
-	width: 80%;
-	line-height: 20px;
-	margin: auto;
-	margin-top: 40px;
+  font-size: 1rem;
+  /* font-weight: 600; */
+  width: 80%;
+  line-height: 20px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 /* footer */
 .footer_sections {
-	font-family: 'Poppins', sans-serif;
-	width: 80vw;
-	margin: 30px auto;
-	display: flex;
-	color: #fff;
-	justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  width: 80vw;
+  margin: 30px auto;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
 }
 .footer_section {
-	font-family: 'Poppins', sans-serif;
-	width: 80vw;
-	display: flex;
-	justify-content: space-between;
-	margin: auto;
+  font-family: "Poppins", sans-serif;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 .footer_sections img {
-	height: 40px;
+  height: 40px;
 }
 .social_icons {
-	color: #747477;
+  color: #747477;
 }
 .social_icons i {
-	font-size: 25px;
-	margin-left: 5px;
+  font-size: 25px;
+  margin-left: 5px;
 }
 .footer_section_1 {
-	background-color: #17171d;
-	border-radius: 10px;
-	margin: 10px;
-	padding: 20px;
-	width: 430px;
+  background-color: #17171d;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 430px;
 }
 .prize_section_sponser {
-	height: 90px !important;
-	width: 120px !important;
+  height: 90px !important;
+  width: 120px !important;
 }
 .footer_section_1_content {
-	display: flex;
-	align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 .footer_section_1_content img {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 .footer_section_1_content p {
-	color: #747477;
+  color: #747477;
 }
 .footer_section h1 {
-	font-size: 20px;
-	color: #fff;
+  font-size: 20px;
+  color: #fff;
 }
 .footer_section_2 {
-	text-align: right;
-	margin-top: 110px;
-	margin-left: 100px;
+  text-align: right;
+  margin-top: 110px;
+  margin-left: 100px;
 }
 .footer_section_2 a {
-	color: #c2c2b7;
+  color: #c2c2b7;
 }
 .footer_section img {
-	width: 40px;
+  width: 40px;
 }
 .footer_section_3 {
-	width: 80vw;
-	margin: 20px auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  width: 80vw;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer_section_3 img {
-	width: 300px;
+  width: 300px;
 }
 /* media queries */
 @media (max-width: 1200px) {
-	.prize_section_card.sponsors {
-		padding: 40px 18px;
-	}
-	.prize_section_card.sponsors p {
-		width: 100%;
-		font-size: 0.9rem;
-	}
+  .prize_section_card.sponsors {
+    padding: 40px 18px;
+  }
+  .prize_section_card.sponsors p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 768px) {
-	.prize_section_card {
-		width: 46%;
-	}
-	.prize_section_detail {
-		width: 85%;
-	}
-	.footer_section {
-		display: block;
-		margin: auto;
-	}
-	.footer_section_1 {
-		margin: 10px auto 20px auto;
-		max-width: 600px;
-		width: 600px;
-	}
-	.footer_section_2 {
-		text-align: center;
-		margin-left: 0px;
-		margin-top: 0px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.footer_section_3 p {
-		font-size: 10px;
-	}
-	.footer_section_3 img {
-		width: 180px;
-	}
+  .prize_section_card {
+    width: 46%;
+  }
+  .prize_section_detail {
+    width: 85%;
+  }
+  .footer_section {
+    display: block;
+    margin: auto;
+  }
+  .footer_section_1 {
+    margin: 10px auto 20px auto;
+    max-width: 600px;
+    width: 600px;
+  }
+  .footer_section_2 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer_section_3 p {
+    font-size: 10px;
+  }
+  .footer_section_3 img {
+    width: 180px;
+  }
 }
 @media (max-width: 692px) {
-	.prize_section_card h1 {
-		font-size: 2rem;
-		margin-bottom: 10px;
-	}
-	.prize_section_card p {
-		font-size: 1rem;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.footer_section_1 {
-		margin: 10px auto 20px auto;
-		max-width: 500px;
-		width: 500px;
-	}
+  .prize_section_card h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .prize_section_card p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer_section_1 {
+    margin: 10px auto 20px auto;
+    max-width: 500px;
+    width: 500px;
+  }
 }
 @media (max-width: 590px) {
-	.title {
-		margin-bottom: 0;
-	}
-	.prize_section_detail {
-		margin-bottom: 20px;
-	}
-	.prize_section_card {
-		width: 80%;
-		margin-bottom: 20px;
-	}
-	.prize_section_card div.img {
-		max-height: 200px;
-	}
-	.prize_section_detail {
-		width: 100%;
-	}
-	.prize_section_card.sponsors {
-		padding: 20px 25px;
-	}
-	.prize_section_card .sponsors_img {
-		width: 100%;
-	}
-	.footer_section_1 {
-		max-width: 410px;
-		width: 410px;
-	}
+  .title {
+    margin-bottom: 0;
+  }
+  .prize_section_detail {
+    margin-bottom: 20px;
+  }
+  .prize_section_card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .prize_section_card div.img {
+    max-height: 200px;
+  }
+  .prize_section_detail {
+    width: 100%;
+  }
+  .prize_section_card.sponsors {
+    padding: 20px 25px;
+  }
+  .prize_section_card .sponsors_img {
+    width: 100%;
+  }
+  .footer_section_1 {
+    max-width: 410px;
+    width: 410px;
+  }
 }
 @media (max-width: 472px) {
-	.prize_section_card {
-		width: 100%;
-	}
-	.prize_section_card div.img {
-		max-height: 180px;
-	}
-	.footer_section_1 {
-		max-width: 350px;
-		width: 350px;
-	}
+  .prize_section_card {
+    width: 100%;
+  }
+  .prize_section_card div.img {
+    max-height: 180px;
+  }
+  .footer_section_1 {
+    max-width: 350px;
+    width: 350px;
+  }
 }
 @media (max-width: 376px) {
-	.footer_section_1 {
-		max-width: 280px;
-		width: 280px;
-	}
-	.footer_section_3 {
-		display: block;
-		padding-left: 80px;
-	}
+  .footer_section_1 {
+    max-width: 280px;
+    width: 280px;
+  }
+  .footer_section_3 {
+    display: block;
+    padding-left: 80px;
+  }
 }
 @media (max-width: 327px) {
-	.footer_section_1 {
-		max-width: 250px;
-		width: 250px;
-	}
-	.footer_section_3 {
-		display: block;
-		padding-left: 30px;
-	}
+  .footer_section_1 {
+    max-width: 250px;
+    width: 250px;
+  }
+  .footer_section_3 {
+    display: block;
+    padding-left: 30px;
+  }
 }

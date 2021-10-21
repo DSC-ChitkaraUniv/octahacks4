@@ -142,7 +142,7 @@ p {
   color: #db9c19;
 }
 #nav_bar .nav_links a:hover {
-  color: #db9c19;
+  color: #e6881c;
 }
 #nav_bar .gdsc_logo {
   width: 20%;
@@ -248,13 +248,13 @@ aside.menubar {
   width: 50%;
 }
 #landing .left h1 {
+  text-shadow: 0 0 4px #e6881c, 0 0 6px #e6881c, 0 0 10px #e6881c,
+    0 0 10px #e6881c, 0 0 20px #e6881c, 0 0 22px #e6881c, 0 0 20px #e6881c,
+    0 0 20px #e6881c;
   font-size: 3.8rem;
   /* font-weight: 800; */
   margin-bottom: 0px;
   margin-top: 0;
-  /* text-shadow: 0 0 5px #e6881c, 0 0 10px #e6881c, 0 0 20px #e6881c,
-		0 0 40px #e6881c, 0 0 80px #e6881c, 0 0 90px #e6881c, 0 0 100px #e6881c,
-		0 0 150px #e6881c; */
 }
 #landing .left h3 {
   font-size: 1.2rem;
@@ -445,8 +445,8 @@ aside.menubar {
   margin-top: 50px;
 }
 #tracks h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 3.2rem;
+  font-weight: 600;
   margin-bottom: 20px;
   margin-left: 0;
 }
@@ -455,6 +455,13 @@ aside.menubar {
   margin-top: 5px;
   margin-bottom: 50px;
   padding-left: 10px;
+  color: white;
+  font-size: 110%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#trackhead {
+  color: #ff4400e8;
 }
 #tracks #tracks_wrapper {
   display: flex;
@@ -475,6 +482,7 @@ aside.menubar {
   overflow: hidden;
   cursor: pointer;
 }
+
 #tracks #tracks_wrapper > div h1 {
   text-align: center;
 }
@@ -539,6 +547,10 @@ aside.menubar {
 #tracks #tracks_wrapper > div p {
   color: #fff;
   font-size: 0.9rem;
+}
+
+.tracks_info {
+  color: white;
 }
 /* ------------------------------ Join_us Section --------------------------*/
 #join_us {
