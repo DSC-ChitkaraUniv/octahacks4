@@ -136,12 +136,13 @@ p {
 }
 #nav_bar .nav_links a {
 	font-size: 1.3rem;
-	color: #6d6d6d;
+	/* color: #6d6d6d; */
+	color: white;
 	margin-left: 20px;
 	transition: all 0.5s ease;
 }
 #nav_bar .nav_links a:hover {
-	color: #fff;
+	color: #db9c19;
 }
 #nav_bar .gdsc_logo {
 	width: 20%;
@@ -267,9 +268,13 @@ aside.menubar {
 	margin-bottom: 20px;
 }
 
-.title4 {
+/* .title4 {
 	/* text-shadow: 2px 2px #d8d8d8; */
+
+#aboutus {
+	color: white;
 }
+
 .tagline {
 	font-style: oblique;
 	margin-bottom: 80px;
@@ -379,7 +384,7 @@ aside.menubar {
 
 /* -----------------------------Ticker Section ------------------------*/
 #ticker {
-	background-color: #17171d;
+	background-color: #0e52a740;
 	height: 15vh;
 	position: absolute;
 	bottom: 0;
@@ -409,14 +414,26 @@ aside.menubar {
 }
 #about_us h1 {
 	font-size: 2.5rem;
-	font-weight: 400;
+	font-weight: 700;
 	margin-bottom: 20px;
 	margin-left: 0;
+	text-align: center;
+	color: #ee5017;
 }
 #about_us p {
 	margin-top: 5px;
 	margin-bottom: 50px;
-	padding-left: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: large;
+	line-height: 200%;
+	text-align: center;
+}
+.about_high {
+	color: rgb(243 65 16);
+}
+.abouttitle {
+	font-size: 120%;
 }
 
 /* --------------------------------------- Tracks section --------------------------------------- */
@@ -913,6 +930,14 @@ aside.menubar {
 		width: 80%;
 	}
 }
+
+@media (max-width: 740px) {
+	#about_us p {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
 @media (max-width: 540px) {
 	/* Landing Section */
 	#landing {
@@ -958,6 +983,7 @@ aside.menubar {
 	#ticker img {
 		width: 12%;
 	}
+
 	#ticker img.jetbrains {
 		width: 5%;
 	}
