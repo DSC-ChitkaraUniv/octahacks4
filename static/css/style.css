@@ -445,8 +445,8 @@ aside.menubar {
   margin-top: 50px;
 }
 #tracks h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 3.2rem;
+  font-weight: 600;
   margin-bottom: 20px;
   margin-left: 0;
 }
@@ -455,6 +455,7 @@ aside.menubar {
   margin-top: 5px;
   margin-bottom: 50px;
   padding-left: 10px;
+  color: coral;
 }
 #tracks #tracks_wrapper {
   display: flex;
