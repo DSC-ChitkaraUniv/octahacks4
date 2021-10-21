@@ -1,406 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#5f676e">
-    <meta name="description" content="Octhacks 4.0 - By Google Developer Students Club, Chitkara University" />
-    <meta name="keywords"
-        content="Octahacks 4.0, Octahacks, GDSC, GDSC CUIET, Google Developer Students Club, Google Developer Student Club Chitkara University, Chitkara, Chitkara University, Octahacks Chitkara, Octahacks GDSC CUIET, Octhacks-4.0" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#5f676e"
+    />
+    <meta
+      name="description"
+      content="Octhacks 4.0 - By Google Developer Students Club, Chitkara University"
+    />
+    <meta
+      name="keywords"
+      content="Octahacks 4.0, Octahacks, GDSC, GDSC CUIET, Google Developer Students Club, Google Developer Student Club Chitkara University, Chitkara, Chitkara University, Octahacks Chitkara, Octahacks GDSC CUIET, Octhacks-4.0"
+    />
     <meta name="language" content="English" />
-    <meta name="author" content="Google Developer Students Club, Chitkara University" />
+    <meta
+      name="author"
+      content="Google Developer Students Club, Chitkara University"
+    />
 
     <!-- Mainfest File & Favicon -->
     <link rel="icon" href="./assets/icons/favicon.ico" />
     <!-- <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png"> -->
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="./manifest.json" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css"> -->
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/faq.css" />
     <link rel="stylesheet" href="static/css/prizeFooter.css" />
     <title>Octahacks 4.0</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="preloader">
-        <div class="word">OCTAHACKS&nbsp;4.0</div>
-        <div class="overlay"></div>
+      <div class="word">OCTAHACKS&nbsp;4.0</div>
+      <div class="overlay"></div>
     </div>
     <nav id="nav_bar">
-        <div class="octahacks_logo">
-            <img src="./assets/media/octahcks_logo.png" alt="logo" />
-        </div>
-        <div class="nav_links">
-            <a href="#">Home</a>
-            <a href="#">Tracks</a>
-            <a href="#">Prizes</a>
-            <a href="#">Sponsors</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="gdsc_logo">
-            <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
-        </div>
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <div class="nav_links">
+        <a href="#">Home</a>
+        <a href="#">Tracks</a>
+        <a href="#">Prizes</a>
+        <a href="#">Sponsors</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="gdsc_logo">
+        <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
+      </div>
     </nav>
     <nav id="nav_bar_mobile">
-        <div class="octahacks_logo">
-            <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+        <div class="ham-box">
+          <div class="ham-box-inner"></div>
         </div>
-        <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
-            <div class="ham-box">
-                <div class="ham-box-inner"></div>
-            </div>
-        </button>
+      </button>
     </nav>
     <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
-        <nav>
-            <ol>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tracks</a></li>
-                <li><a href="#">Prizes</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-            </ol>
-            <img class="gdsc_logo" src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
-        </nav>
+      <nav>
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Prizes</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ol>
+        <img
+          class="gdsc_logo"
+          src="./assets/media/GDSClogo.png"
+          alt="gdsc_cuiet"
+        />
+      </nav>
     </aside>
     <div id="content">
-        <div id="landing_wrap">
-            <section id="landing">
-                <div class="left">
-                    <h1>OctaHacks 4.0</h1>
-                    <h3>"TAGLINE FOR THE HACKATHON"</h3>
-                    <div class="calendar">
-                        <div class="top">
-                            <span>November 2021</span>
-                            <div>
-                                <span class="material-icons-outlined">
-                                    chevron_left
-                                </span>
-                                <span class="material-icons-outlined">
-                                    chevron_right
-                                </span>
-                            </div>
-                        </div>
-                        <div class="middle">
-                            <span>
-                                <span>11</span>
-                                <span>12</span>
-                                <span>13</span>
-                                <span>14</span>
-                                <span>15</span>
-                            </span>
-                            <span>16</span>
-                        </div>
-                        <div class="bottom">
-                            Prepare to be amazed
-                        </div>
-                    </div>
-                    <p>OctaHacks is the annual flagship event of GDSC, Chitkara University, where innovators get an
-                        opportunity to merge their creative ideas with their technical skills to build something
-                        exemplary.
-                        Expect more than 36 hours of inspiring panel discussions, working and collaborating on
-                        futuristic
-                        and empowering tech products, networking opportunities</p>
-                    <div class="buttons">
-                        <div class="devfolio_apply_button apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG"
-                            data-button-theme="dark-inverted"></div>
-                        <a href="#">
-                            <div class="discord_button">
-                                <img src="./assets/media/discord_inner_logo.png" alt="discord">
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="discord_button_mobile">
-                                <img src="./assets/media/discord_mobile_logo.png" alt="discord">
-                            </div>
-                        </a>
-                    </div>
+      <div id="landing_wrap">
+        <section id="landing">
+          <div class="left">
+            <h1 class="title4">OctaHacks 4.0</h1>
+            <h3 class="tagline">"TECH IT EASY"</h3>
+            <div class="calendar">
+              <div class="top">
+                <span>November 2021</span>
+                <div>
+                  <span class="material-icons-outlined"> chevron_left </span>
+                  <span class="material-icons-outlined"> chevron_right </span>
                 </div>
-                <div class="right landing_vector">
-                    <img src="./assets/media/Home_Banner_1.png" alt="Octahacks 4.0" />
-                </div>
-            </section>
-            <section id="ticker">
-                <div class="ticker_wrap">
-                    <img src="./assets/Sponsors/1pass.png" alt="1pass" style="filter: invert();">
-                    <img class="jetbrains" src="./assets/Sponsors/jetbrains.png" alt="jetbrains">
-                    <img src="./assets/Sponsors/airmeet.png" alt="airmeet">
-                    <img src="./assets/Sponsors/axure.png" alt="axure">
-                    <img src="./assets/Sponsors/balsamiq.png" alt="1passbalsamiq">
-                    <img src="./assets/Sponsors/bugsee.png" alt="bugsee">
-                    <img src="./assets/Sponsors/cb.png" alt="cb">
-                    <img src="./assets/Sponsors/devfolio.png" alt="devfolio">
-                    <img src="./assets/Sponsors/codechef.png" alt="codechef">
-                    <img src="./assets/Sponsors/ninja(1).png" alt="ninja">
-                    <img src="./assets/Sponsors/streamyard.png" alt="streamyard">
-                </div>
-            </section>
-        </div>
-        <section id="tracks">
-            <h1>Tracks</h1>
-            <p>This November, Octahacks is back with it's fourth edition, Octahacks 4.0. Expect more than 36 hours of
-                inspiring panel discussions, working and collaborating on futuristic and empowering tech products,
-                networking opportunities with budding developers and lots of fun!
+              </div>
+              <div class="middle">
+                <span>
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                </span>
+                <span>16</span>
+              </div>
+              <div class="bottom">Prepare to be amazed</div>
+            </div>
+            <p>
+              OctaHacks is the annual flagship event of GDSC, Chitkara
+              University, where innovators get an opportunity to merge their
+              creative ideas with their technical skills to build something
+              exemplary. Expect more than 36 hours of inspiring panel
+              discussions, working and collaborating on futuristic and
+              empowering tech products, networking opportunities
             </p>
-            <div id="tracks_wrapper">
-                <div id="track1">
-                    <div>
-                        <h1>SMART CITY</h1>
-                        <p>Smart Cities is a space in which developers, entrepreneurs, designers, professors,
-                            researchers and persons interested in making their city a better place can gather to build
-                            in a collaboratively fashion a solution that makes our city more efficient and intelligent.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_1.png" alt="smart_city">
-                    </div>
+            <div class="buttons">
+              <div
+                class="devfolio_apply_button apply-button"
+                data-hackathon-slug="YOUR-HACKATHON-SLUG"
+                data-button-theme="dark-inverted"
+              ></div>
+              <a href="#">
+                <div class="discord_button">
+                  <img
+                    src="./assets/media/discord_inner_logo.png"
+                    alt="discord"
+                  />
                 </div>
-                <div id="track2">
-                    <div>
-                        <h1>SECURITY</h1>
-                        <p>
-                            Security-related issues are growing. The programs for public safety lack and also the
-                            increased use of automated technologies is also driving an increase in the advancement of
-                            the need for proper security systems.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_2.png" alt="security">
-                    </div>
+              </a>
+              <a href="#">
+                <div class="discord_button_mobile">
+                  <img
+                    src="./assets/media/discord_mobile_logo.png"
+                    alt="discord"
+                  />
                 </div>
-                <div id="track3">
-                    <div>
-                        <h1>FINTECH</h1>
-                        <p>
-                            From mobile payments to nternet banking, an increased number of consumers are adopting
-                            fintech solutions today, and therefore there are a lot of exciting career options in this
-                            space.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_3.png" alt="fintech">
-                    </div>
-                </div>
-                <div id="track4">
-                    <div>
-                        <h1>HEALTH</h1>
-                        <p>
-                            The increase in patients has led to the decrease in the relative number of doctors per
-                            patient which results in a vicous cycle where ignored or delayed diagnostics of an ailment
-                            makes the patient more dependent on doctor's check-up. Some also cannot afford to visit a
-                            doctor.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_4.png" alt="health">
-                    </div>
-                </div>
-                <div id="track5">
-                    <div>
-                        <h1>BUSINESS</h1>
-                        <p>
-                            As technology is evolving, Business are accelerating their investments in innovation and
-                            digital advancements. Today, in this fast trending world, many innovative ideas have turned
-                            into significant business adventures. Here, we are looking forward to our next Facebook,
-                            Uber or Zomato.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_5.png" alt="business">
-                    </div>
-                </div>
-                <div id="track6">
-                    <div>
-                        <h1>WOMEN SECURITY</h1>
-                        <p>
-                            Everything you know about Women Safety is set to change. From self-driving cars to
-                            ride-hailing to micro-mobility, we are in the process of completely reinventing how people
-                            move. And while we do know that everything is about to change, we still need to figure out
-                            how.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_6.png" alt="women_security">
-                    </div>
-                </div>
-                <div id="track7">
-                    <div>
-                        <h1>ENVIRONMENT</h1>
-                        <p>
-                            We are advancing in technology at a very rapid rate. But this development has made our
-                            nature suffer. It is considered more important to expand cities than to save trees.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_7.png" alt="environment">
-                    </div>
-                </div>
-                <div id="track8">
-                    <div>
-                        <h1>EDUCATION</h1>
-                        <p>
-                            A large part of our population is still not able to recieve proper education due to lack of
-                            resources. Education is important for everyone,but only a few have access to it. Children of
-                            poor families tend to move frequently, which disrupts their education.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/media/Tracks_8.png" alt="education">
-                    </div>
-                </div>
+              </a>
             </div>
+          </div>
+          <div class="right landing_vector">
+            <img src="./assets/media/Home_Banner_1.png" alt="Octahacks 4.0" />
+          </div>
         </section>
-        <section class="prize_section" id="prizes">
-            <h1 class="title">Prizes</h1>
-            <p class="prize_section_detail">The most mysterious yet popular job but be careful it is not what you
-                think.Below there are some qualities and disciplines one should follow to be called a Hacker.</p>
-            <div class="prize_section_cards">
-                <div class="prize_section_card">
-                    <div class="img">
-                        <img src="assets/media/Prizes_1.jpg" alt="prizes_1">
-                    </div>
-                    <h1>₹ 40,000 *</h1>
-                    <p>+Goodies worth upto</p>
-                    <p>₹ 1 Lakh</p>
-                </div>
-                <div class="prize_section_card">
-                    <div class="img">
-                        <img src="assets/media/Prizes_2.jpg" alt="prizes_2">
-                    </div>
-                    <h1>₹ 20,000 *</h1>
-                    <p>+Goodies worth upto</p>
-                    <p>₹ 75 Thousand</p>
-                </div>
-                <div class="prize_section_card">
-                    <div class="img">
-                        <img src="assets/media/Prizes_3.jpg" alt="prizes_3">
-                    </div>
-                    <h1>₹ 10,000 *</h1>
-                    <p>+Goodies worth upto</p>
-                    <p>₹ 30 Thousand</p>
-                </div>
+        <section id="ticker">
+          <div class="ticker_wrap">
+            <img
+              src="./assets/Sponsors/1pass.png"
+              alt="1pass"
+              style="filter: invert()"
+            />
+            <img
+              class="jetbrains"
+              src="./assets/Sponsors/jetbrains.png"
+              alt="jetbrains"
+            />
+            <img src="./assets/Sponsors/airmeet.png" alt="airmeet" />
+            <img src="./assets/Sponsors/axure.png" alt="axure" />
+            <img src="./assets/Sponsors/balsamiq.png" alt="1passbalsamiq" />
+            <img src="./assets/Sponsors/bugsee.png" alt="bugsee" />
+            <img src="./assets/Sponsors/cb.png" alt="cb" />
+            <img src="./assets/Sponsors/devfolio.png" alt="devfolio" />
+            <img src="./assets/Sponsors/codechef.png" alt="codechef" />
+            <img src="./assets/Sponsors/ninja(1).png" alt="ninja" />
+            <img src="./assets/Sponsors/streamyard.png" alt="streamyard" />
+          </div>
+        </section>
+      </div>
+      <section id="tracks">
+        <h1>Tracks</h1>
+        <p>
+          This November, Octahacks is back with it's fourth edition, Octahacks
+          4.0. Expect more than 36 hours of inspiring panel discussions, working
+          and collaborating on futuristic and empowering tech products,
+          networking opportunities with budding developers and lots of fun!
+        </p>
+        <div id="tracks_wrapper">
+          <div id="track1">
+            <div>
+              <h1>SMART CITY</h1>
+              <p>
+                Smart Cities is a space in which developers, entrepreneurs,
+                designers, professors, researchers and persons interested in
+                making their city a better place can gather to build in a
+                collaboratively fashion a solution that makes our city more
+                efficient and intelligent.
+              </p>
             </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_1.png" alt="smart_city" />
+            </div>
+          </div>
+          <div id="track2">
+            <div>
+              <h1>SECURITY</h1>
+              <p>
+                Security-related issues are growing. The programs for public
+                safety lack and also the increased use of automated technologies
+                is also driving an increase in the advancement of the need for
+                proper security systems.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_2.png" alt="security" />
+            </div>
+          </div>
+          <div id="track3">
+            <div>
+              <h1>FINTECH</h1>
+              <p>
+                From mobile payments to nternet banking, an increased number of
+                consumers are adopting fintech solutions today, and therefore
+                there are a lot of exciting career options in this space.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_3.png" alt="fintech" />
+            </div>
+          </div>
+          <div id="track4">
+            <div>
+              <h1>HEALTH</h1>
+              <p>
+                The increase in patients has led to the decrease in the relative
+                number of doctors per patient which results in a vicous cycle
+                where ignored or delayed diagnostics of an ailment makes the
+                patient more dependent on doctor's check-up. Some also cannot
+                afford to visit a doctor.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_4.png" alt="health" />
+            </div>
+          </div>
+          <div id="track5">
+            <div>
+              <h1>BUSINESS</h1>
+              <p>
+                As technology is evolving, Business are accelerating their
+                investments in innovation and digital advancements. Today, in
+                this fast trending world, many innovative ideas have turned into
+                significant business adventures. Here, we are looking forward to
+                our next Facebook, Uber or Zomato.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_5.png" alt="business" />
+            </div>
+          </div>
+          <div id="track6">
+            <div>
+              <h1>WOMEN SECURITY</h1>
+              <p>
+                Everything you know about Women Safety is set to change. From
+                self-driving cars to ride-hailing to micro-mobility, we are in
+                the process of completely reinventing how people move. And while
+                we do know that everything is about to change, we still need to
+                figure out how.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_6.png" alt="women_security" />
+            </div>
+          </div>
+          <div id="track7">
+            <div>
+              <h1>ENVIRONMENT</h1>
+              <p>
+                We are advancing in technology at a very rapid rate. But this
+                development has made our nature suffer. It is considered more
+                important to expand cities than to save trees.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_7.png" alt="environment" />
+            </div>
+          </div>
+          <div id="track8">
+            <div>
+              <h1>EDUCATION</h1>
+              <p>
+                A large part of our population is still not able to recieve
+                proper education due to lack of resources. Education is
+                important for everyone,but only a few have access to it.
+                Children of poor families tend to move frequently, which
+                disrupts their education.
+              </p>
+            </div>
+            <div class="img">
+              <img src="./assets/media/Tracks_8.png" alt="education" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prize_section" id="prizes">
+        <h1 class="title">Prizes</h1>
+        <p class="prize_section_detail">
+          The most mysterious yet popular job but be careful it is not what you
+          think.Below there are some qualities and disciplines one should follow
+          to be called a Hacker.
+        </p>
+        <div class="prize_section_cards">
+          <div class="prize_section_card">
+            <div class="img">
+              <img src="assets/media/Prizes_1.jpg" alt="prizes_1" />
+            </div>
+            <h1>₹ 40,000 *</h1>
+            <p>+Goodies worth upto</p>
+            <p>₹ 1 Lakh</p>
+          </div>
+          <div class="prize_section_card">
+            <div class="img">
+              <img src="assets/media/Prizes_2.jpg" alt="prizes_2" />
+            </div>
+            <h1>₹ 20,000 *</h1>
+            <p>+Goodies worth upto</p>
+            <p>₹ 75 Thousand</p>
+          </div>
+          <div class="prize_section_card">
+            <div class="img">
+              <img src="assets/media/Prizes_3.jpg" alt="prizes_3" />
+            </div>
+            <h1>₹ 10,000 *</h1>
+            <p>+Goodies worth upto</p>
+            <p>₹ 30 Thousand</p>
+          </div>
+        </div>
 
-            <div class="prize_section_cards">
-                <div class="prize_section_card sponsors">
-                    <div class="sponsors_img">
-                        <img src="assets/Sponsors/tezos.png" alt="tezos">
-                    </div>
-                    <p>
-                        ₹10,000 for best Dapp built on Tezos. ₹5,000 for Runners-up
-                    </p>
-                </div>
-                <div class="prize_section_card sponsors">
-                    <div class="sponsors_img">
-                        <img src="assets/Sponsors/matic.png" alt="tezos">
-                    </div>
-                    <p>
-                        ₹10,000 for best hack built on Ethereum, or ₹15,000 for the best hack built on Ethereum + Matic
-                    </p>
-                </div>
-                <div class="prize_section_card sponsors">
-                    <div class="sponsors_img">
-                        <img src="assets/Sponsors/portis.png" alt="tezos">
-                    </div>
-                    <p>
-                        200 USD (in crypto) for best Dapp built on Portis
-                    </p>
-                </div>
+        <div class="prize_section_cards">
+          <div class="prize_section_card sponsors">
+            <div class="sponsors_img">
+              <img src="assets/Sponsors/tezos.png" alt="tezos" />
             </div>
-        </section>
+            <p>₹10,000 for best Dapp built on Tezos. ₹5,000 for Runners-up</p>
+          </div>
+          <div class="prize_section_card sponsors">
+            <div class="sponsors_img">
+              <img src="assets/Sponsors/matic.png" alt="tezos" />
+            </div>
+            <p>
+              ₹10,000 for best hack built on Ethereum, or ₹15,000 for the best
+              hack built on Ethereum + Matic
+            </p>
+          </div>
+          <div class="prize_section_card sponsors">
+            <div class="sponsors_img">
+              <img src="assets/Sponsors/portis.png" alt="tezos" />
+            </div>
+            <p>200 USD (in crypto) for best Dapp built on Portis</p>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="message-icon">
-        <i class="fa-solid fa-message" id="message-box"></i>
+      <i class="fa-solid fa-message" id="message-box"></i>
     </div>
     <div class="faq">
-        <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
-        <div class="description">
-            <h1 class="description-header">Have a question?</h1>
-            <div class="description-content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
-                suscipit magni a ad quisquam aut dolorum! Maxime dolorem adipisci
-                error consequuntur neque recusandae vel, veritatis voluptates ipsam
-                magni pariatur dolorum.
-            </div>
+      <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
+      <div class="description">
+        <h1 class="description-header">Have a question?</h1>
+        <div class="description-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+          suscipit magni a ad quisquam aut dolorum! Maxime dolorem adipisci
+          error consequuntur neque recusandae vel, veritatis voluptates ipsam
+          magni pariatur dolorum.
         </div>
-        <div class="faq-container">
-            <div class="faq-left"></div>
-            <div class="faq-right">
-                <div>
-                    <div class="right-header">Want to reach out to us?</div>
-                    <div class="right-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Inventore consectetur possimus iste odit sunt ipsa vero fugit
-                        doloremque ea. Facilis eum commodi qui cupiditate voluptas!
-                        Aspernatur repellendus nisi quod dolorum?
-                    </div>
-                </div>
-                <div class="faq-main-container">
-                    <img src="assets/media/FAQ_main.png" class="faq-main" />
-                </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-left"></div>
+        <div class="faq-right">
+          <div>
+            <div class="right-header">Want to reach out to us?</div>
+            <div class="right-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore consectetur possimus iste odit sunt ipsa vero fugit
+              doloremque ea. Facilis eum commodi qui cupiditate voluptas!
+              Aspernatur repellendus nisi quod dolorum?
             </div>
+          </div>
+          <div class="faq-main-container">
+            <img src="assets/media/FAQ_main.png" class="faq-main" />
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <div class="footer_sections">
-            <img src="assets/media/octahcks_logo.png">
-            <div class="social_icons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-discord"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-twitter"></i>
-                <p>For more updates,<br />follow us on all social media.</p>
-            </div>
+      <div class="footer_sections">
+        <img src="assets/media/octahcks_logo.png" />
+        <div class="social_icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-discord"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-twitter"></i>
+          <p>For more updates,<br />follow us on all social media.</p>
         </div>
+      </div>
 
-        <div class="footer_section">
-            <div class="footer_section_1">
-                <div class="footer_section_1_content">
-                    <img src="assets/media/chitkara_logo.png">
-                    <div>
-                        <h1> About Chitkara University</h1>
-                        <p>Chitkara university is a private university located in Rajpura,Punjab, India. It offers
-                            undergraduate programs, post-graduate program and doctoral programs in fields of
-                            engineering, management, pharmacy, and education.</p>
-                    </div>
-                </div>
+      <div class="footer_section">
+        <div class="footer_section_1">
+          <div class="footer_section_1_content">
+            <img src="assets/media/chitkara_logo.png" />
+            <div>
+              <h1>About Chitkara University</h1>
+              <p>
+                Chitkara university is a private university located in
+                Rajpura,Punjab, India. It offers undergraduate programs,
+                post-graduate program and doctoral programs in fields of
+                engineering, management, pharmacy, and education.
+              </p>
             </div>
-            <div class="footer_section_1">
-                <div class="footer_section_1_content">
-                    <img src="assets/media/octahcks_logo.png">
-                    <div>
-                        <h1> About Octahacks</h1>
-                        <p>This November, Octahacks is back with it's third edition, Octhacks 4.0. Expect more than 36
-                            hours of inspiring pnel dicusiions, empowering tech products, networking opportunities wth
-                            budding developers and lots of fun!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_section_2">
-                <a>Terms and conditions</a><br />
-                <a>Privacy Policy</a><br />
-                <a>Sponser Us</a><br />
-                <a>Join Us</a><br />
-            </div>
+          </div>
         </div>
-        <div class="footer_section_3">
-            <p>Architected with ♥ by GDSC Core Team</p>
-            <img src="assets/media/GDSClogo.png">
+        <div class="footer_section_1">
+          <div class="footer_section_1_content">
+            <img src="assets/media/octahcks_logo.png" />
+            <div>
+              <h1>About Octahacks</h1>
+              <p>
+                This November, Octahacks is back with it's third edition,
+                Octhacks 4.0. Expect more than 36 hours of inspiring pnel
+                dicusiions, empowering tech products, networking opportunities
+                wth budding developers and lots of fun!
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="footer_section_2">
+          <a>Terms and conditions</a><br />
+          <a>Privacy Policy</a><br />
+          <a>Sponser Us</a><br />
+          <a>Join Us</a><br />
+        </div>
+      </div>
+      <div class="footer_section_3">
+        <p>Architected with ♥ by GDSC Core Team</p>
+        <img src="assets/media/GDSClogo.png" />
+      </div>
     </footer>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -409,36 +462,33 @@
     <script src="static/js/index.js"></script>
     <script src="static/js/script.js"></script>
 
-
     <script>
-        var loader = document.querySelector('.preloader')
-        var body = document.querySelector('body')
-        window.addEventListener('load', () => {
-            loader.style.display = 'none'
-        })
-//         setTimeout(() => {
-//             loader.style.display = 'none';
-//         }, 2000);
+      var loader = document.querySelector(".preloader");
+      var body = document.querySelector("body");
+      window.addEventListener("load", () => {
+        loader.style.display = "none";
+      });
+      //         setTimeout(() => {
+      //             loader.style.display = 'none';
+      //         }, 2000);
     </script>
     <!-- ------------ PWA Script -------------------- -->
     <script>
-        function registerServiceWorker() {
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker
-                    .register("./service-worker.js")
-                    .then((reg) => {
-                        console.log("Registration successful", reg);
-                    })
-                    .catch((e) =>
-                        console.error("Error during service worker registration:", e)
-                    );
-            } else {
-                console.warn("Service Worker is not supported");
-            }
+      function registerServiceWorker() {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .then((reg) => {
+              console.log("Registration successful", reg);
+            })
+            .catch((e) =>
+              console.error("Error during service worker registration:", e)
+            );
+        } else {
+          console.warn("Service Worker is not supported");
         }
-        registerServiceWorker();
+      }
+      registerServiceWorker();
     </script>
-
-</body>
-
+  </body>
 </html>
