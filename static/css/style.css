@@ -455,7 +455,13 @@ aside.menubar {
   margin-top: 5px;
   margin-bottom: 50px;
   padding-left: 10px;
-  color: coral;
+  color: white;
+  font-size: 110%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#trackhead {
+  color: #ff4400e8;
 }
 #tracks #tracks_wrapper {
   display: flex;
@@ -476,6 +482,7 @@ aside.menubar {
   overflow: hidden;
   cursor: pointer;
 }
+
 #tracks #tracks_wrapper > div h1 {
   text-align: center;
 }
@@ -540,6 +547,10 @@ aside.menubar {
 #tracks #tracks_wrapper > div p {
   color: #fff;
   font-size: 0.9rem;
+}
+
+.tracks_info {
+  color: white;
 }
 /* ------------------------------ Join_us Section --------------------------*/
 #join_us {
