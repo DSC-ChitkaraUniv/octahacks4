@@ -540,6 +540,59 @@ aside.menubar {
   color: #fff;
   font-size: 0.9rem;
 }
+/* ------------------------------ Join_us Section --------------------------*/
+#join_us {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#join_us h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 0;
+  text-align: center;
+}
+#join_us .img_vector {
+  width: 32%;
+}
+#join_us .sponsor_us,
+#join_us .register {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #17171d;
+}
+#join_us .sponsor_us h1,
+#join_us .register h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#join_us .sponsor_us p,
+#join_us .register p {
+  color: #fff;
+}
+#join_us .sponsor_us .img,
+#join_us .register .img {
+  width: 50%;
+}
+#join_us .btn {
+  width: 50%;
+  padding: 18px 30px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #17171d;
+  text-align: center;
+  font-size: 1.2;
+  font-weight: 600;
+}
 /* ------------------------------- Keyframes Section ------------------------- */
 @keyframes ticker {
   0% {
@@ -579,6 +632,14 @@ aside.menubar {
   }
   #tracks #tracks_wrapper > div {
     width: 32%;
+  }
+  /* Join Us Section */
+  #join_us .img_vector {
+    display: none;
+  }
+  #join_us .sponsor_us,
+  #join_us .register {
+    width: 40%;
   }
 }
 @media (max-width: 1080px) {
@@ -947,6 +1008,17 @@ aside.menubar {
   #tracks #tracks_wrapper > div {
     width: 90%;
   }
+  /* Join Us */
+  #join_us .sponsor_us {
+    margin-bottom: 30px;
+  }
+  #join_us .register {
+    margin-bottom: 50px;
+  }
+  #join_us .sponsor_us,
+  #join_us .register {
+    width: 80%;
+  }
 }
 @media (max-width: 480px) {
   /* #content {
@@ -1017,6 +1089,15 @@ aside.menubar {
   }
   #tracks #tracks_wrapper > div p {
     font-size: 0.8rem;
+  }
+  /* Join Us */
+  #join_us .sponsor_us,
+  #join_us .register {
+    width: 100%;
+  }
+  #join_us .sponsor_us .btn,
+  #join_us .register .btn {
+    width: 80%;
   }
 }
 @media (max-width: 320px) {
