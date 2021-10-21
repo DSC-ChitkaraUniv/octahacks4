@@ -27,10 +27,11 @@
   height: 40px;
   width: 100px;
   margin-right: 3%;
+  margin-top: 20px;
 }
 .alpha-images,
 .beta-images {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .sponsors-alpha {
   border: 2px solid #ebb722;
