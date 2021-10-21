@@ -137,6 +137,10 @@ p {
   margin-left: 20px;
   transition: all 0.5s ease;
 }
+
+#nav_bar .nav_links a:nth-child(1) {
+  color: #db9c19;
+}
 #nav_bar .nav_links a:hover {
   color: #db9c19;
 }
@@ -423,6 +427,7 @@ aside.menubar {
   padding-right: 150px;
   font-size: large;
   line-height: 200%;
+  text-align: center;
 }
 .about_high {
   color: rgb(243 65 16);
