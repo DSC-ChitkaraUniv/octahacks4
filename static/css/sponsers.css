@@ -1,0 +1,123 @@
+.sponser-description {
+  color: #bbbbbc;
+  font-size: 0.9rem;
+}
+.sponsors-alpha,
+.sponsors-beta,
+.sponsors-gamma,
+.sponsors-delta {
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  background-color: #17171d;
+  padding: 2%;
+  padding-left: 4%;
+}
+
+.alpha-images,
+.beta-images,
+.gamma-images,
+.delta-images {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.alpha-images img,
+.beta-images img {
+  height: 80px;
+  width: 100px;
+  margin-right: 3%;
+}
+.alpha-images,
+.beta-images {
+  justify-content: space-between;
+}
+.sponsors-alpha {
+  border: 2px solid #ebb722;
+}
+.alpha-title {
+  color: #ebb722;
+}
+.sponsors-beta {
+  border: 2px solid #71a0ce;
+}
+.beta-title {
+  color: #71a0ce;
+}
+.sponsors-gamma {
+  border: 2px solid #df8464;
+  width: 40%;
+  margin-top: 20px;
+}
+.gamma-title {
+  color: #df8464;
+}
+.sponsors-delta {
+  border: 2px solid #8aa360;
+  width: 60%;
+  margin-top: 20px;
+}
+.delta-title {
+  color: #8aa360;
+}
+.wrap {
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+}
+.wrap div {
+  margin-right: 1%;
+  box-sizing: border-box;
+
+  background-color: #17171d;
+  border-radius: 10px;
+}
+.gamma-images img,
+.delta-images img {
+  height: 60px;
+  width: 80px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.gamma-images,
+.delta-images {
+  width: 100%;
+  padding: 0 !important;
+  margin-right: 0;
+  justify-content: space-evenly;
+}
+.partner {
+  margin-top: 20px;
+  width: 150px;
+  height: 100px;
+}
+.authentication,
+.community {
+  padding: 1%;
+  padding-left: 2%;
+}
+.authentication {
+  width: 40%;
+  margin-top: 20px;
+}
+.community {
+  width: 60%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 650px) {
+  .wrap {
+    flex-direction: column;
+  }
+  .authentication {
+    width: 100%;
+  }
+  .community {
+    width: 100%;
+  }
+  .sponsors-gamma {
+    width: 100%;
+  }
+  .sponsors-delta {
+    width: 100%;
+  }
+}
