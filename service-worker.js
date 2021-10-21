@@ -1,6 +1,6 @@
 const CACHE_NAME = 'offline';
 // Customize this with a different URL if needed.
-const OFFLINE_URL = 'index.html';
+const OFFLINE_URL = 'offline.html';
 
 self.addEventListener('install', event => {
 	event.waitUntil(
@@ -10,21 +10,26 @@ self.addEventListener('install', event => {
 			// response isn't fulfilled from the HTTP cache; i.e., it will be from
 			// the network.
 			await cache.add(new Request(OFFLINE_URL, { cache: 'reload' }));
-			// await cache.addAll([
-			// 	'./',
-			// 	'./assets/icons/favicon.ico',
-			// 	'./assets/icons/apple-touch-icon.png',
-			// 	'./assets/bg/ieilogo.png',
-			// 	'./assets/bg/CU_logo.png',
-			// 	'./assets/iconfont/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2',
-			// 	'./css/root.css',
-			// 	'./css/keyframes.css',
-			// 	'./css/loader.css',
-			// 	'./css/nav.css',
-			// 	'./css/sidebars.css',
-			// 	'./css/index.css',
-			// 	'./js/navbar.js',
-			// ]);
+			await cache.addAll([
+				'./',
+				'./assets/icons/favicon.ico',
+				'./static/css/style.css',
+				'./assets/media/octahcks_logo.png',
+				'./assets/media/GDSClogo.png',
+				'./assets/media/Home_Banner_1.png',
+				'./assets/Sponsors/1pass.png',
+				'./assets/Sponsors/jetbrains.png',
+				'./assets/Sponsors/airmeet.png',
+				'./assets/Sponsors/axure.png',
+				'./assets/Sponsors/balsamiq.png',
+				'./assets/Sponsors/bugsee.png',
+				'./assets/Sponsors/cb.png',
+				'./assets/Sponsors/devfolio.png',
+				'./assets/Sponsors/codechef.png',
+				'./assets/Sponsors/ninja(1).png',
+				'./assets/Sponsors/streamyard.png',
+				'./static/js/index.js',
+			]);
 		})()
 	);
 	// Force the waiting service worker to become the active service worker.
