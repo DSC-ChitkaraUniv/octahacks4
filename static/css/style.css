@@ -864,6 +864,14 @@ aside.menubar {
     width: 80%;
   }
 }
+
+@media (max-width: 740px) {
+  #about_us p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media (max-width: 540px) {
   /* Landing Section */
   #landing {
@@ -909,6 +917,7 @@ aside.menubar {
   #ticker img {
     width: 12%;
   }
+
   #ticker img.jetbrains {
     width: 5%;
   }
