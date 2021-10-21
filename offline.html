@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#5f676e"
+    />
+    <meta
+      name="description"
+      content="Octhacks 4.0 - By Google Developer Students Club, Chitkara University"
+    />
+    <meta
+      name="keywords"
+      content="Octahacks 4.0, Octahacks, GDSC, GDSC CUIET, Google Developer Students Club, Google Developer Student Club Chitkara University, Chitkara, Chitkara University, Octahacks Chitkara, Octahacks GDSC CUIET, Octhacks-4.0"
+    />
+    <meta name="language" content="English" />
+    <meta
+      name="author"
+      content="Google Developer Students Club, Chitkara University"
+    />
+
+    <!-- Mainfest File & Favicon -->
+    <link rel="icon" href="./assets/icons/favicon.ico" />
+
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Octahacks 4.0</title>
+  </head>
+
+  <body class="body">
+    <nav id="nav_bar">
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <div class="nav_links">
+        <a href="#">Home</a>
+        <a href="#">Tracks</a>
+        <a href="#">Prizes</a>
+        <a href="#">Sponsors</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="gdsc_logo">
+        <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
+      </div>
+    </nav>
+    <nav id="nav_bar_mobile">
+      <div class="octahacks_logo">
+        <img src="./assets/media/octahcks_logo.png" alt="logo" />
+      </div>
+      <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+        <div class="ham-box">
+          <div class="ham-box-inner"></div>
+        </div>
+      </button>
+    </nav>
+    <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
+      <nav>
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Prizes</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ol>
+        <img
+          class="gdsc_logo"
+          src="./assets/media/GDSClogo.png"
+          alt="gdsc_cuiet"
+        />
+      </nav>
+    </aside>
+    <div id="content">
+      <div id="landing_wrap">
+        <section id="landing">
+          <div class="left">
+            <h1 class="title4">OctaHacks 4.0</h1>
+            <h3 class="tagline">"TECH IT EASY"</h3>
+            <div class="calendar">
+              <div class="top">
+                <span>November 2021</span>
+                <div></div>
+              </div>
+              <div class="middle">
+                <span>
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                </span>
+                <span>16</span>
+              </div>
+              <div class="bottom">Prepare to be amazed</div>
+            </div>
+          </div>
+          <div class="right landing_vector">
+            <img src="./assets/media/Home_Banner_1.png" alt="Octahacks 4.0" />
+          </div>
+        </section>
+        <section id="ticker">
+          <div class="ticker_wrap">
+            <img
+              src="./assets/Sponsors/1pass.png"
+              alt="1pass"
+              style="filter: invert()"
+            />
+            <img
+              class="jetbrains"
+              src="./assets/Sponsors/jetbrains.png"
+              alt="jetbrains"
+            />
+            <img src="./assets/Sponsors/airmeet.png" alt="airmeet" />
+            <img src="./assets/Sponsors/axure.png" alt="axure" />
+            <img src="./assets/Sponsors/balsamiq.png" alt="1passbalsamiq" />
+            <img src="./assets/Sponsors/bugsee.png" alt="bugsee" />
+            <img src="./assets/Sponsors/cb.png" alt="cb" />
+            <img src="./assets/Sponsors/devfolio.png" alt="devfolio" />
+            <img src="./assets/Sponsors/codechef.png" alt="codechef" />
+            <img src="./assets/Sponsors/ninja(1).png" alt="ninja" />
+            <img src="./assets/Sponsors/streamyard.png" alt="streamyard" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./static/js/index.js"></script>
+    <script>
+      window.addEventListener("online", () => {
+        window.location.reload();
+      });
+    </script>
+  </body>
+</html>
