@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -276,6 +278,7 @@ aside.menubar {
 	/* text-shadow: 2px 2px #d8d8d8; */
 
 #aboutus {
+  margin-top: 100px;
   color: white;
 }
 
@@ -446,7 +449,6 @@ aside.menubar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
 }
 #tracks h1 {
   font-size: 3.2rem;

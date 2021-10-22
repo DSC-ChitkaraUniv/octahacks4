@@ -1,9 +1,14 @@
+.sponsors {
+  margin-top: 30px;
+}
 .sponser-description {
   color: #bbbbbc;
   font-size: 0.9rem;
 }
 .sponsor-title {
-  font-size: 2rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 .sponsors-alpha,
 .sponsors-beta,
@@ -118,7 +123,7 @@
   justify-content: space-evenly;
 }
 .partner {
-  margin-top: 20px;
+  margin-top: 50px;
   width: 150px;
   height: 50px;
 }
