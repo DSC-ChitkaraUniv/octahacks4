@@ -2,6 +2,15 @@
 .prize_section {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
+.title,
+.sponser-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 0;
+
   /* background-color: #731ce687; */
   border-radius: 22% 80% 0% 0% / 0% 20% 100% 48%;
   background-color: #000000;
@@ -39,7 +48,7 @@
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 40px;
-  /* box-shadow: 0 0 80px -10px black;  */
+  box-shadow: 0 0 80px -10px black;
   cursor: pointer;
 }
 .prize_section_card div.img {
