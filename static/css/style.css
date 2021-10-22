@@ -248,9 +248,9 @@ aside.menubar {
   width: 50%;
 }
 #landing .left h1 {
-  text-shadow: 0 0 4px #e6881c, 0 0 6px #e6881c, 0 0 10px #e6881c,
+  /* text-shadow: 0 0 4px #e6881c, 0 0 6px #e6881c, 0 0 10px #e6881c,
     0 0 10px #e6881c, 0 0 20px #e6881c, 0 0 22px #e6881c, 0 0 20px #e6881c,
-    0 0 20px #e6881c;
+    0 0 20px #e6881c; */
   font-size: 3.8rem;
   /* font-weight: 800; */
   margin-bottom: 0px;
