@@ -2,13 +2,16 @@
   color: #bbbbbc;
   font-size: 0.9rem;
 }
+.sponsor-title {
+  font-size: 2rem;
+}
 .sponsors-alpha,
 .sponsors-beta,
 .sponsors-gamma,
 .sponsors-delta {
   border-radius: 20px;
   box-sizing: border-box;
-  margin-top: 30px;
+  margin-top: 70px;
   background-color: #17171d;
   padding: 2%;
   padding-left: 4%;
@@ -35,31 +38,61 @@
 }
 .sponsors-alpha {
   border: 2px solid #ebb722;
+  transition: all 0.5s ease-in-out;
 }
+
 .alpha-title {
   color: #ebb722;
 }
+.sponsors-alpha:hover {
+  background-color: #ebb722;
+}
+
 .sponsors-beta {
   border: 2px solid #71a0ce;
+  transition: all 0.5s ease-in-out;
 }
 .beta-title {
   color: #71a0ce;
 }
+.sponsors-beta:hover {
+  background-color: #71a0ce;
+}
+
 .sponsors-gamma {
   border: 2px solid #df8464;
   width: 40%;
   margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+  margin-right: 4%;
 }
 .gamma-title {
   color: #df8464;
+}
+.sponsors-gamma:hover {
+  background-color: #df8464;
 }
 .sponsors-delta {
   border: 2px solid #8aa360;
   width: 60%;
   margin-top: 20px;
+  transition: all 0.5s ease-in-out;
 }
 .delta-title {
   color: #8aa360;
+}
+.sponsors-delta:hover {
+  background-color: #8aa360;
+}
+.sponsors-alpha:hover > .alpha-title,
+.sponsors-beta:hover > .beta-title,
+.sponsors-gamma:hover > .gamma-title,
+.sponsors-delta:hover > .delta-title {
+  color: black;
+}
+.sponsors-delta,
+.sponsors-gamma {
+  margin-top: 60px;
 }
 .wrap {
   display: flex;
@@ -67,10 +100,7 @@
   padding: 0;
 }
 .wrap div {
-  margin-right: 1%;
   box-sizing: border-box;
-
-  background-color: #17171d;
   border-radius: 10px;
 }
 .gamma-images img,
@@ -96,14 +126,25 @@
 .community {
   padding: 1%;
   padding-left: 2%;
+  background-color: #17171d;
+  margin-top: 60px;
 }
 .authentication {
   width: 40%;
   margin-top: 20px;
+  margin-right: 4%;
+  transition: all 0.7s ease-in-out;
+}
+.authentication:hover {
+  transform: scale(1.05);
 }
 .community {
   width: 60%;
   margin-top: 20px;
+  transition: all 0.7s ease-in-out;
+}
+.community:hover {
+  transform: scale(1.05);
 }
 @media screen and (max-width: 650px) {
   .wrap {
