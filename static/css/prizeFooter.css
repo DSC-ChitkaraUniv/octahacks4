@@ -69,6 +69,7 @@
   margin-bottom: 40px;
   background-color: black;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .prize_section_card:nth-child(even) {
@@ -302,4 +303,29 @@
     display: block;
     padding-left: 30px;
   }
+}
+@keyframes pop {
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.prize_section_card:hover {
+  animation-name: pop;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  color: black;
+}
+.prize_section_card:hover > p {
+  color: #000000;
+}
+.prize_section_card:nth-child(even):hover {
+  background-color: red;
+}
+.prize_section_card:nth-child(odd):hover {
+  background-color: #db9c19;
 }
