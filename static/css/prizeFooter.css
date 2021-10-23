@@ -2,10 +2,10 @@
 .prize_section {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  background-color: #000000;
+  /* background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.26'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2300004c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23000853' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23000f5a' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23001461' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23091A68' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='84.6%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='36.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23484848' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23484848' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23343434' stroke-width='1.4' stroke-miterlimit='10' stroke-opacity='0.42'%3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill-opacity='0.42' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
   background-attachment: fixed;
@@ -21,10 +21,10 @@
   text-align: center;
   border-radius: 22% 80% 0% 0% / 0% 20% 100% 48%;
   background-size: cover;
-  background-color: #000000;
+  /* background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.26'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2300004c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23000853' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23000f5a' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23001461' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23091A68' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='84.6%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='36.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23484848' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23484848' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23343434' stroke-width='1.4' stroke-miterlimit='10' stroke-opacity='0.42'%3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill-opacity='0.42' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
   background-attachment: fixed;
@@ -32,7 +32,7 @@
 }
 
 .title {
-  color: white;
+  color: rgb(238, 80, 23);
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -62,14 +62,15 @@
   /* background-color: #17171d;*/
   background-color: transparent;
   border-radius: 4%;
-  border: 3px solid #db9c19;
+  border-radius: 96% 4% 95% 5% / 3% 95% 5% 97%;
+  border: 2px solid #db9c19;
   color: #fff;
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 40px;
   background-color: black;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 }
 
 .prize_section_card:nth-child(even) {
@@ -315,17 +316,50 @@
 
 .prize_section_card:hover {
   animation-name: pop;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
-  color: black;
+  /* color: black; */
 }
-.prize_section_card:hover > p {
-  color: #000000;
-}
+/* .prize_section_card:hover > p {
+  /* color: #000000; */
+/* }  */
 .prize_section_card:nth-child(even):hover {
-  background-color: red;
+  /* background-color: rgb(207, 27, 27); */
+  box-shadow: 5px 5px rgb(207, 27, 27);
 }
 .prize_section_card:nth-child(odd):hover {
-  background-color: #db9c19;
+  /* background-color: #db9c19; */
+  box-shadow: 5px 5px #db9c19;
 }
+
+/* .wrap-image {
+  position: relative;
+}
+.wrap-image::before,
+.wrap-image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border: 2px solid #db9c19;
+  transition: all 0.5s ease-out;
+}
+.wrap-image::before {
+  background-color: #db9c19;
+  top: -15px;
+  left: -15px;
+}
+.wrap-image::after {
+  bottom: -15px;
+  right: -15px;
+}
+.wrap-image:hover::before {
+  top: 15px;
+  left: 15px;
+}
+.wrap-image:hover::after {
+  bottom: 15px;
+  right: 15px;
+} */
