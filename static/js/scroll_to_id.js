@@ -2,11 +2,7 @@
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
-    if(id == "#faq"){
-        document.querySelector("body > div.message-icon").click();
-    }
-else{
-    // target element
+
     var $id = $(id);
     if ($id.length === 0) {
         return;
@@ -20,5 +16,4 @@ else{
 
     // animated top scrolling
     $('body, html').animate({scrollTop: pos},1000);
-}
 });
