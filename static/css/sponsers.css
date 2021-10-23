@@ -1,6 +1,9 @@
 .sponsors {
   margin-top: 30px;
 }
+.sponsors div{
+  cursor: pointer;
+}
 .sponser-description {
   color: #bbbbbc;
   font-size: 0.9rem;
