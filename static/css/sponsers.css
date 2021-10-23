@@ -6,9 +6,16 @@
   font-size: 0.9rem;
 }
 .sponsor-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 2.5rem;
   font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 0;
+  text-align: center;
+  padding-top: 30px;
 }
 .sponsors-alpha,
 .sponsors-beta,
