@@ -1306,3 +1306,74 @@ aside.menubar {
     font-size: 0.6rem;
   }
 }
+
+
+/******************************************************* Mentor Section ********************************************************************/
+#mentors{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#mentors_wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+#mentors_wrapper>div{
+  width: 20%;
+  margin: 16px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#mentors>h1{
+  font-size: 3.0rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 0;
+  text-align: center;
+  color: rgb(238, 80, 23);
+}
+
+#mentors>p{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  color: white;
+  font-size: 100%;
+}
+
+#mentor_img img{
+  border-radius: 200px;
+  width: 160px;
+}
+
+
+@media (max-width: 740px) {
+  #mentors_wrapper>div{
+    width: 25%;
+  }
+  
+}
+
+@media (max-width: 540px) {
+  #mentors_wrapper>div{
+    width: 35%;
+  }
+}
+@media (max-width: 480px) {
+  #mentors_wrapper>div{
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  #mentors_wrapper>div{
+    width: 100%;
+  }
+  
+}
