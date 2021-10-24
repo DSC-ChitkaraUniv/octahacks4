@@ -1,6 +1,7 @@
 .sponsors {
   margin-top: 30px;
   background-color: black;
+  padding-bottom: 15px;
 }
 .sponsors div {
   cursor: pointer;
