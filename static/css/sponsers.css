@@ -5,12 +5,12 @@
 .sponsors div {
   cursor: pointer;
 }
-.sponser-description {
-  color: #bbbbbc;
-  font-size: 0.9rem;
+.sponsors_description {
+  color: rgb(238, 224, 224);
+  text-align: center;
 }
 .sponsor-title {
-  color: wheat;
+  color: rgb(236, 230, 217);
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 20px;
