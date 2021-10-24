@@ -25,7 +25,8 @@
 .sponsors-alpha,
 .sponsors-beta,
 .sponsors-gamma,
-.sponsors-delta {
+.sponsors-delta,
+.sponsor-nova {
   border-radius: 20px;
   box-sizing: border-box;
   margin-top: 70px;
@@ -38,7 +39,8 @@
 .alpha-images,
 .beta-images,
 .gamma-images,
-.delta-images {
+.delta-images,
+.nova-images {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -96,19 +98,47 @@
   color: #df8464;
 }
 .sponsors-gamma:hover {
-  background-color: #df8464;
+  background-color: black;
+  border-right: 2px solid #df8464;
+  border-top: 2px solid #df8464;
+  border-bottom: 2px solid #df8464;
+  border-left: none;
 }
+/* 
+.sponsors-nova {
+  display: block;
+  border-left: 2px solid #df8464;
+  width: 40%;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+  margin-right: 4%;
+}
+.nova-title {
+  color: #df8464;
+}
+.sponsors-nova:hover {
+  background-color: black;
+  border-right: 2px solid #df8464;
+  border-top: 2px solid #df8464;
+  border-bottom: 2px solid #df8464;
+  border-left: none;
+} */
+
 .sponsors-delta {
-  border-left: 2px solid #8aa360;
+  border-left: 2px solid #d21fff;
   width: 60%;
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
 }
 .delta-title {
-  color: #8aa360;
+  color: #d21fff;
 }
 .sponsors-delta:hover {
-  background-color: #8aa360;
+  background-color: black;
+  border-right: 2px solid #d21fff;
+  border-top: 2px solid #d21fff;
+  border-bottom: 2px solid #d21fff;
+  border-left: none;
 }
 /* .sponsors-alpha:hover > .alpha-title,
 .sponsors-beta:hover > .beta-title,
@@ -152,31 +182,51 @@
 .community {
   padding: 1%;
   padding-left: 2%;
-  background-color: #17171d;
+  background-color: #080808;
   margin-top: 60px;
 }
 .authentication {
+  border-left: 2px solid #fbbc04;
   width: 40%;
   margin-top: 20px;
+  transition: all 0.5s ease-in-out;
   margin-right: 4%;
-  transition: all 0.7s ease-in-out;
 }
+
+.authentication-title {
+  color: #fbbc04;
+}
+
 .authentication:hover {
-  transform: scale(1.05);
+  background-color: black;
+  border-right: 2px solid #fbbc04;
+  border-top: 2px solid #fbbc04;
+  border-bottom: 2px solid #fbbc04;
+  border-left: none;
 }
 .community {
+  border-left: 2px solid #34a853;
   width: 60%;
   margin-top: 20px;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.community-title {
+  color: #34a853;
 }
 .community:hover {
-  transform: scale(1.05);
+  background-color: black;
+  border-right: 2px solid #34a853;
+  border-top: 2px solid #34a853;
+  border-bottom: 2px solid #34a853;
+  border-left: none;
 }
 
 .alpha-title,
 .beta-title,
 .gamma-title,
-.delta-title {
+.delta-title,
+.authentication-title,
+.community-title {
   font-family: poppins;
 }
 

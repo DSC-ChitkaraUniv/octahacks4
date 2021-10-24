@@ -1102,9 +1102,6 @@ aside.menubar {
   #tracks #tracks_wrapper > div > div:first-child {
     width: 100%;
   }
-  #tracks #tracks_wrapper > div > div:last-child {
-    /* display: none; */
-  }
   #tracks #tracks_wrapper > div h1 {
     font-size: 1.5rem;
     margin-bottom: 0;
