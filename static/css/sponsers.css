@@ -1,21 +1,26 @@
 .sponsors {
   margin-top: 30px;
+  background-color: black;
 }
-.sponser-description {
-  color: #bbbbbc;
-  font-size: 0.9rem;
+.sponsors div {
+  cursor: pointer;
+}
+.sponsors_description {
+  color: rgb(238, 224, 224);
+  text-align: center;
 }
 .sponsor-title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 400;
+  color: rgb(236, 230, 217);
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 20px;
   margin-left: 0;
+  padding-top: 35px;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  padding-top: 30px;
+}
+.awesome {
+  color: rgb(238, 80, 23);
 }
 .sponsors-alpha,
 .sponsors-beta,
@@ -24,9 +29,10 @@
   border-radius: 20px;
   box-sizing: border-box;
   margin-top: 70px;
-  background-color: #17171d;
+  background-color: #080808;
   padding: 2%;
   padding-left: 4%;
+  transition: all ease-in-out 0.4s;
 }
 
 .alpha-images,
@@ -49,30 +55,38 @@
   justify-content: space-around;
 }
 .sponsors-alpha {
-  border: 2px solid #ebb722;
+  border-left: 2px solid #ea4335;
   transition: all 0.5s ease-in-out;
 }
 
 .alpha-title {
-  color: #ebb722;
+  color: #ea4335;
 }
 .sponsors-alpha:hover {
-  background-color: #ebb722;
+  background-color: black;
+  border-right: 2px solid #ea4335;
+  border-top: 2px solid #ea4335;
+  border-bottom: 2px solid #ea4335;
+  border-left: none;
 }
 
 .sponsors-beta {
-  border: 2px solid #71a0ce;
+  border-left: 2px solid #4285f4;
   transition: all 0.5s ease-in-out;
 }
 .beta-title {
-  color: #71a0ce;
+  color: #4285f4;
 }
 .sponsors-beta:hover {
-  background-color: #71a0ce;
+  background-color: black;
+  border-right: 2px solid #4285f4;
+  border-top: 2px solid #4285f4;
+  border-bottom: 2px solid #4285f4;
+  border-left: none;
 }
 
 .sponsors-gamma {
-  border: 2px solid #df8464;
+  border-left: 2px solid #df8464;
   width: 40%;
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
@@ -85,7 +99,7 @@
   background-color: #df8464;
 }
 .sponsors-delta {
-  border: 2px solid #8aa360;
+  border-left: 2px solid #8aa360;
   width: 60%;
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
@@ -96,12 +110,12 @@
 .sponsors-delta:hover {
   background-color: #8aa360;
 }
-.sponsors-alpha:hover > .alpha-title,
+/* .sponsors-alpha:hover > .alpha-title,
 .sponsors-beta:hover > .beta-title,
 .sponsors-gamma:hover > .gamma-title,
 .sponsors-delta:hover > .delta-title {
-  color: black;
-}
+  color: black; 
+} */
 .sponsors-delta,
 .sponsors-gamma {
   margin-top: 60px;
@@ -158,6 +172,14 @@
 .community:hover {
   transform: scale(1.05);
 }
+
+.alpha-title,
+.beta-title,
+.gamma-title,
+.delta-title {
+  font-family: poppins;
+}
+
 @media screen and (max-width: 650px) {
   .wrap {
     flex-direction: column;

@@ -50,6 +50,7 @@
     />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css"> -->
     <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/logos.css" />
     <link rel="stylesheet" href="static/css/hover.css" />
     <link rel="stylesheet" href="static/css/faq.css" />
     <link rel="stylesheet" href="static/css/prizeFooter.css" />
@@ -171,15 +172,19 @@
               src="./assets/Sponsors/jetbrains.png"
               alt="jetbrains"
             />
-            <img src="./assets/Sponsors/airmeet.png" alt="airmeet" />
+            <img
+              src="./assets/Sponsors/airmeet.svg"
+              alt="airmeet"
+              class="airmeet"
+            />
             <img src="./assets/Sponsors/axure.png" alt="axure" />
-            <img src="./assets/Sponsors/balsamiq.png" alt="1passbalsamiq" />
+            <img src="./assets/Sponsors/balsamiq.svg" alt="1passbalsamiq" />
             <img src="./assets/Sponsors/bugsee.png" alt="bugsee" />
             <img src="./assets/Sponsors/cb.png" alt="cb" />
-            <img src="./assets/Sponsors/devfolio.png" alt="devfolio" />
-            <img src="./assets/Sponsors/codechef.png" alt="codechef" />
-            <img src="./assets/Sponsors/ninja(1).png" alt="ninja" />
-            <img src="./assets/Sponsors/streamyard.png" alt="streamyard" />
+            <img src="./assets/Sponsors/devfolio.svg" alt="devfolio" />
+            <img src="./assets/Sponsors/codechef.svg" alt="codechef" />
+            <img src="./assets/Sponsors/codingNinjas.svg" alt="ninja" />
+            <img src="./assets/Sponsors/streamyard.svg" alt="streamyard" />
           </div>
         </section>
       </div>
@@ -200,10 +205,11 @@
       <section id="tracks">
         <h1 id="trackhead">Tracks</h1>
         <p>
-          This November, Octahacks is back with it's fourth edition, Octahacks
-          4.0. Expect more than 36 hours of inspiring panel discussions, working
-          and collaborating on futuristic and empowering tech products,
-          networking opportunities with budding developers and lots of fun!
+          As the name suggests, Octahacks comprises 8 themes or impact areas to
+          help <span id="about_high">spark your ideas.</span> Remember that
+          youʼre welcome to build the prototype with the technologies of your
+          choice, so feel free to use any technology and think outside the box
+          too!
         </p>
         <div id="tracks_wrapper">
           <div id="track1">
@@ -335,7 +341,6 @@
         </p>
         <div class="prize_section_cards">
           <div class="prize_section_card wrap-image tilt tilt-logo" data-tilt>
-
             <h1>₹ 15,000 *</h1>
             <p>+Goodies worth upto</p>
             <p>₹ 1 Lakh</p>
@@ -355,49 +360,169 @@
         <div class="prize_section_cards">
           <div class="prize_section_card sponsors tilt tilt-logo" data-tilt>
             <div class="sponsors_img">
-              <img src="assets/Sponsors/tezos.png" alt="tezos" />
+              <img src="assets/Sponsors/tezos.svg" alt="tezos" id="tezos" />
             </div>
             <p>₹10,000 for best Dapp built on Tezos. ₹5,000 for Runners-up</p>
           </div>
           <div class="prize_section_card sponsors tilt tilt-logo" data-tilt>
             <div class="sponsors_img">
-              <img src="assets/Sponsors/matic.png" alt="tezos" />
+              <img src="assets/Sponsors/matic.png" alt="mmatic" />
             </div>
             <p>
               ₹10,000 for best hack built on Ethereum, or ₹15,000 for the best
               hack built on Ethereum + Matic
             </p>
           </div>
-          <div class="prize_section_card sponsors tilt tilt-logo hovicon effect-8" data-tilt>
+          <div
+            class="prize_section_card sponsors tilt tilt-logo hovicon effect-8"
+            data-tilt
+          >
             <div class="sponsors_img">
-              <img src="assets/Sponsors/portis.png" alt="tezos" />
+              <img src="assets/Sponsors/portis.svg" alt="portis" />
             </div>
             <p>200 USD (in crypto) for best Dapp built on Portis</p>
           </div>
         </div>
       </section>
+
+      <section id="judges">
+        <h1 id="judge_head">Judges</h1>
+        <div id="judges_wrapper">
+          <div id="judge">
+            <div class="img">
+              <img src="./assets/judges/kamal.png" alt="kamal_vaid" />
+            </div>
+            <div>
+              <h1>Kamal Vaid</h1>
+              <p>
+                Google Certified Android Developer | Technology Lead at Infosys | GDE For Google Assistant 
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/judges/vrijraj.png" alt="vrijraj" />
+            </div>
+            <div>
+              <h1>Vrijraj</h1>
+              <p>
+                Organizer, GDG Jalandhar | Google Developers Expert for Firebase & Web Technologies
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/judges/niharika.jfif" alt="niharika" />
+            </div>
+            <div>
+              <h1>Niharika Arora</h1>
+              <p>
+                Google Developer Expert for Android, Contributor at AarogyaSetu, Active Community Contributor, Gold Medalist
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/judges/tushar.jfif" alt="tushar" />
+            </div>
+            <div>
+              <h1>Tushar Srivastava</h1>
+              <p>
+                Technical Project Lead at Huawei Technologies India
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/judges/mohit.jfif" alt="mohit" />
+            </div>
+            <div>
+              <h1>Mohit Uniyal</h1>
+              <p>
+                Instructor and Product Engineer at Coding Blocks | Mentor@TensorFlow at Google Code-in
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/judges/suraj.jfif" alt="suraj" />
+            </div>
+            <div>
+              <h1>Suraj Kumar</h1>
+              <p>
+                Product & Happiness Engineering | Google DSC Graduate
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div id="track7">
+            <div class="img">
+              <img src="./assets/judges/aprajay.jfif" alt="aprajay" />
+            </div>
+            <div>
+              <h1>Aprajay Verma</h1>
+              <p>
+                Founder @GoGurukul | AVP @Religare | Mentor @Techstars | Technopreneur | Enthusiast
+              </p>
+              <div class="judge_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+        
+      </section>
+
       <section class="sponsors" id="sponsors">
-        <h1 class="sponsor-title">Our Awesome Sponsors</h1>
-        <p class="sponsors-description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
-          consequuntur recusandae similique blanditiis quos ipsum, cumque
-          sapiente magnam illum qui quaerat, nostrum alias sed. Nihil asperiores
-          vel ullam velit tempore!
+        <h1 class="sponsor-title">
+          Our <span class="awesome">Awesome</span> Sponsors
+        </h1>
+        <p class="sponsors_description">
+          While all our participants make our event lively. It is our very
+          amazing <span class="about_high">sponsors</span> that
+          <span class="about_high">make it possible.</span>
         </p>
         <div class="sponsors-alpha">
           <h2 class="alpha-title">Alpha Sponsors</h2>
           <div class="alpha-images">
-            <img src="assets/Sponsors/techlogo.png" />
-            <img src="assets/Sponsors/airmeet.png" />
-            <img src="assets/Sponsors/devfolio.png" />
+            <img src="assets/Sponsors/techlogo.svg" />
+            <img src="assets/Sponsors/airmeet.svg" class="airmeet" />
+            <img src="assets/Sponsors/devfolio.svg" />
           </div>
         </div>
         <div class="sponsors-beta">
           <h2 class="beta-title">Beta Sponsors</h2>
           <div class="beta-images">
-            <img src="assets/Sponsors/streamyard.png" />
-            <img src="assets/Sponsors/balsamiq.png" />
-            <img src="assets/Sponsors/devfolio.png" />
+            <img src="assets/Sponsors/streamyard.svg" />
+            <img src="assets/Sponsors/balsamiq.svg" />
+            <img src="assets/Sponsors/devfolio.svg" />
             <img src="assets/Sponsors/bugsee.png" />
           </div>
         </div>
@@ -406,32 +531,31 @@
             <h2 class="gamma-title">Gamma Sponsors</h2>
             <div class="gamma-images">
               <img src="assets/Sponsors/cb.png" />
-              <img src="assets/Sponsors/ninja.png" />
-              <img src="assets/Sponsors/devfolio.png" />
-              <img src="assets/Sponsors/gatsbylogo.png" />
-              <img src="assets/Sponsors/tezos.png" />
+              <img src="assets/Sponsors/codingNinjas.svg" />
+              <img src="assets/Sponsors/devfolio.svg" />
+              <img src="assets/Sponsors/gatsby.svg" />
+              <img src="assets/Sponsors/tezos.svg" />
             </div>
           </div>
           <div class="sponsors-delta">
             <h2 class="delta-title">Delta Sponsors</h2>
             <div class="delta-images">
-              <img src="assets/Sponsors/echo-ar.webp" />
-              <img src="assets/Sponsors/linode.png" />
-              <img src="assets/Sponsors/todoist.jpg" />
-              <img src="assets/Sponsors/topcoder.png" />
-              <img src="assets/Sponsors/upgrad.png" />
-              <img src="assets/Sponsors/portis.png" />
+              <img src="assets/Sponsors/Linode-Logo-Black.svg" />
+              <img src="assets/Sponsors/todoist.svg" />
+              <img src="assets/Sponsors/topcoder.svg" />
+              <img src="assets/Sponsors/upgrad.svg" />
+              <img src="assets/Sponsors/portis.svg" />
             </div>
           </div>
         </div>
         <div class="wrap">
           <div class="authentication">
             <h2>Authentication Partner</h2>
-            <img src="assets/Sponsors/fold.png" class="partner" />
+            <img src="assets/Sponsors/fold-logo.svg" class="partner" />
           </div>
           <div class="community">
             <h2>Community Partner</h2>
-            <img src="assets/Sponsors/hyperdart.png" class="partner" />
+            <img src="assets/Sponsors/hyperDart.svg" class="partner" />
           </div>
         </div>
       </section>

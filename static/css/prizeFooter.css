@@ -32,7 +32,7 @@
 }
 
 .title {
-  color: white;
+  color: rgb(238, 80, 23);
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -62,6 +62,7 @@
   /* background-color: #17171d;*/
   background-color: transparent;
   border-radius: 4%;
+  border-radius: 96% 4% 95% 5% / 3% 95% 5% 97%;
   border: 2px solid #db9c19;
   color: #fff;
   text-align: center;
@@ -103,7 +104,7 @@
   padding: 40px;
 }
 .prize_section_card .sponsors_img {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 .prize_section_card.sponsors p {
@@ -313,7 +314,9 @@
   }
 }
 
-.prize_section_card:hover {
+/* Add this to the mobile view only. */
+
+/* .prize_section_card:hover {
   animation-name: pop;
   animation-duration: 0.3s;
   animation-timing-function: linear;
@@ -323,9 +326,16 @@
 .prize_section_card:hover > p {
   color: #000000;
 }
+} */
+
+/* .prize_section_card:hover > p {
+  /* color: #000000; */
+/* }  */
 .prize_section_card:nth-child(even):hover {
-  background-color: rgb(207, 27, 27);
+  /* background-color: rgb(207, 27, 27); */
+  box-shadow: 5px 5px rgb(207, 27, 27);
 }
 .prize_section_card:nth-child(odd):hover {
-  background-color: #db9c19;
+  /* background-color: #db9c19; */
+  box-shadow: 5px 5px #db9c19;
 }
