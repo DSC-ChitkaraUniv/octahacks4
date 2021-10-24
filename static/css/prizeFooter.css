@@ -314,13 +314,15 @@
   }
 }
 
-.prize_section_card:hover {
+/* Add this to the mobile view only. */
+
+/* .prize_section_card:hover {
   animation-name: pop;
   animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
-  /* color: black; */
-}
+} */
+
 /* .prize_section_card:hover > p {
   /* color: #000000; */
 /* }  */
