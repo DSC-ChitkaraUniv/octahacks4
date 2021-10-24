@@ -819,7 +819,7 @@ aside.menubar {
     bottom: 0px;
     right: 0px;
     padding: 50px 10px;
-    width: min(75vw, 400px);
+    width: min(100vw, 400px);
     height: 100vh;
     outline: 0px;
     background-color: #0b0b1b;
@@ -829,11 +829,19 @@ aside.menubar {
     visibility: visible;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  aside.menubar-open ol a:hover,
-  aside.menubar-open ol a:active,
-  aside.menubar-open ol a:focus {
+  .d_none{
+    display:none;
+  }
+  aside.menubar-open ul a:hover,
+  aside.menubar-open ul a:active,
+  aside.menubar-open ul a:focus {
     color: #ee6c4d;
     outline: 0px;
+  }
+  aside ul{
+    list-style-type: none;
+    font-size: 30px;
+    line-height: 50px;
   }
   aside.menubar nav {
     display: flex;
@@ -932,7 +940,8 @@ aside.menubar {
   aside.menubar .gdsc_logo {
     position: absolute;
     bottom: 0;
-    left: 5px;
+    left: 20%;
+    height: 50px;
   }
 
   section {

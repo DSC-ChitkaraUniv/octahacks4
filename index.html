@@ -73,7 +73,7 @@
         <a href="#prizes">Prizes</a>
         <a href="#sponsors">Sponsors</a>
         <a href="#faq">FAQ</a>
-        <a href="#join_us">Contact</a>
+        <a href="#footer">Contact</a>
       </div>
       <div class="gdsc_logo">
         <img src="./assets/media/GDSClogo.png" alt="gdsc_cuiet" />
@@ -83,22 +83,22 @@
       <div class="octahacks_logo">
         <img src="./assets/media/octahcks_logo.png" alt="logo" />
       </div>
-      <button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+      <button aria-label="Menu" id="hamburger" class="hamburger" onclick="toggleMenubar(this)">
         <div class="ham-box">
           <div class="ham-box-inner"></div>
         </div>
       </button>
     </nav>
-    <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
+    <aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar" id ="aside">
       <nav>
-        <ol>
-          <li><a href="#landing">Home</a></li>
+        <ul>
+          <li><a href="#landing" class="about_high">Home</a></li>
           <li><a href="#tracks">Tracks</a></li>
           <li><a href="#prizes">Prizes</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#join_us">Contact</a></li>
-        </ol>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
         <img
           class="gdsc_logo"
           src="./assets/media/GDSClogo.png"
@@ -621,7 +621,7 @@
         <div class="btn">Register Now</div>
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <div class="footer_sections">
         <img src="assets/media/octahcks_logo.png" />
         <div class="social_icons">
@@ -679,10 +679,10 @@
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="static/js/scroll_to_id.js"></script>
     <script src="static/js/preloader.js"></script>
     <script src="static/js/index.js"></script>
     <script src="static/js/script.js"></script>
-    <script src="static/js/scroll_to_id.js"></script>
     <script src="static/js/tilt.js"></script>
     <script>
       var loader = document.querySelector(".preloader");

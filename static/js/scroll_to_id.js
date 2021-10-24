@@ -1,19 +1,32 @@
 // handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
-    // target element id
-    var id = $(this).attr('href');
+$(document).on("click", 'a[href^="#"]', function (e) {
+  // target element id
+  var id = $(this).attr("href");
 
-    var $id = $(id);
-    if ($id.length === 0) {
-        return;
-    }
+  var $id = $(id);
+  if ($id.length === 0) {
+    return;
+  }
 
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
+  // prevent standard hash navigation (avoid blinking in IE)
+  e.preventDefault();
 
-    // top position relative to the document
-    var pos = $id.offset().top;
+  // top position relative to the document
+  var pos = $id.offset().top;
+ var delay  = pos/100 * 70; 
+  // animated top scrolling
+  $("body, html").animate({ scrollTop: pos }, 1200);
+  console.log(window.innerWidth);
+  if (window.innerWidth < 800) {
+    let asideMenu = document.getElementsByClassName("menu_StyledSidebar")[0];
+    let ham = document.getElementById("hamburger");
+    ham.classList.remove("hamburger-close");
+    ham.classList.add("hamburger");
 
-    // animated top scrolling
-    $('body, html').animate({scrollTop: pos},1000);
+    asideMenu.classList.remove("menubar-open");
+    asideMenu.setAttribute("aria-hidden", "true");
+    asideMenu.setAttribute("tabindex", "-1");
+
+    document.querySelector("body").classList.remove("blur");
+  }
 });
