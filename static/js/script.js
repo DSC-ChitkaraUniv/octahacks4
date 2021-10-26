@@ -1,13 +1,17 @@
 const answers = [
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore consectetur possimus iste odit sunt ipsa vero fugitdoloremque ea. Facilis eum commodi qui cupiditate voluptas!Aspernatur repellendus nisi quod dolorum?',
+	"You can click on the Devfolio button on the landing page, after which you will be redirected to their site to register for our awesome event.",
+	"The participation fee is going to be ₹ 300 per team for anyone who wishes to join.",
+	"If you've got a team well and good, but if you don't you can always solo the event😉. But if you wish we can pair you up with other participants. \n If you don't have an idea, fear not, we've got awesome and more than capable mentors to guide you and help you out with how to come up with one...",
+	"Anyone who wants to frankly...¯\_(ツ)_/¯ \n	doesn't matter what you know or don't. It's going to be an event to remember and you're going to learn a lot...",
+	"A maximum of FOUR participants per team.🧐🤭	",
+	"I thought the swags would have been enough to attract you😁😛 but if you're asking this question then let me list the perks of our event: <ul><li>wide range of industry experts in the mentor and judging panel.</li><li>exceptional chance of exposure.</li><li>the swags that we've listed for teams</li>	<li>Chance for Networking</li>	<li>and need I say, a chance to experience such a big hackathon?</li>	</ul>",
+	"According to the tracks you choose, CODING or NON-CODING you're going to be judged differently. You will be judged on the code quality, implementation, idea, and scalability in the former, while in the latter you'll be judged on how well you've thought out and planned for your idea's implementation... But most importantly you'll be judged on whether you're giving your best or not.	",
+	`No biting, no scratching, and no poking😑... Wait that's not right.🤔 
+	 ... 
+	 	Just be FAIR to yourself, have fun, and don't worry about the daunting details of the code of conduct. We've got your back...😎😎 `,
 ];
+
+
 const message1 = `<div class="message-container">
             <div class="avatar">
               <img src="assets/media/FAQ_display.jpg" class="avatar-image" />
@@ -22,7 +26,7 @@ const accordian = `<div class="accordion">
             <div data-index='2' onclick="answerQuery(event)">What if I don't have a team or idea?</div>
             <div data-index='3' onclick="answerQuery(event)">Who can participate?</div>
             <div data-index='4' onclick="answerQuery(event)">What could be the size of the team?</div>
-            <div data-index='5' onclick="answerQuery(event)">Why should I particiapte in</div>
+            <div data-index='5' onclick="answerQuery(event)">Why should I particiapte in the event?</div>
             <div data-index='6' onclick="answerQuery(event)">How will the teams be judged?</div>
             <div data-index='7' onclick="answerQuery(event)">What is the Code of Conduct?</div>
           </div>`;
@@ -74,19 +78,20 @@ document.getElementById('close').addEventListener('click', () => {
 function answerQuery(e) {
 	let index = e.target.getAttribute('data-index');
 	let left = document.getElementsByClassName('faq-left')[0];
+	let delay = messageTemplate(index).length*25;
 	left.insertAdjacentHTML('beforeEnd', waitMessage);
-	console.log(left.scrollHeight);
 	left.scrollTop = left.scrollHeight;
 	setTimeout(() => {
 		left.removeChild(left.lastChild);
 		left.insertAdjacentHTML('beforeend', messageTemplate(index));
 		left.scrollTop = left.scrollHeight;
 	}, 1500);
+
 	setTimeout(() => {
 		left.insertAdjacentHTML('beforeEnd', waitMessage);
 		left.removeChild(left.lastChild);
 		left.insertAdjacentHTML('beforeEnd', message2);
 		left.insertAdjacentHTML('beforeEnd', accordian);
 		left.scrollTop = left.scrollHeight;
-	}, 3000);
+	}, delay);
 }

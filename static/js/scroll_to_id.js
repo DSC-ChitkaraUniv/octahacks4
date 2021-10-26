@@ -16,7 +16,7 @@ $(document).on("click", 'a[href^="#"]', function (e) {
  var delay  = pos/100 * 70; 
   // animated top scrolling
   $("body, html").animate({ scrollTop: pos }, 1200);
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
   if (window.innerWidth < 800) {
     let asideMenu = document.getElementsByClassName("menu_StyledSidebar")[0];
     let ham = document.getElementById("hamburger");
