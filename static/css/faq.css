@@ -107,11 +107,13 @@
 	.faq-container {
 		flex-direction: column-reverse;
 	}
-	.faq-left,
-	.faq-right {
+	.faq-left{
 		width: 100%;
 	}
-	
+	.faq-right {
+		display:none;
+	}
+
 }
 .message-icon {
 	position: fixed;
