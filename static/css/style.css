@@ -364,7 +364,7 @@ aside.menubar {
   cursor: pointer;
 }
 #landing .buttons .discord_button_mobile {
-  width: 55px;
+  width:35px;
   background-color: #fff;
   height: 44px;
   border-radius: 4px;
@@ -554,7 +554,7 @@ aside.menubar {
   bottom: -5px;
 }
 #tracks #tracks_wrapper > div > div:last-child {
-  width: 80%;
+  width: 50%;
 }
 #tracks #tracks_wrapper > div h1 {
   font-weight: 600;
@@ -1024,6 +1024,7 @@ aside.menubar {
     display: none;
   }
   #landing .left .buttons .discord_button_mobile {
+    width: 100%;
     display: flex;
   }
   /* Ticker Section */
@@ -1126,6 +1127,11 @@ aside.menubar {
   #tracks #tracks_wrapper > div {
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   #tracks #tracks_wrapper > div > div:first-child {
     width: 100%;
@@ -1157,7 +1163,7 @@ aside.menubar {
   }
   #landing .left .buttons iframe,
   #landing .left .buttons .discord_button_mobile {
-    width: 250px !important;
+    width: 150px !important;
   }
   #landing .left .buttons iframe {
     margin-bottom: 10px !important;
