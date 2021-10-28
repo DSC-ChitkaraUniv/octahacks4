@@ -1349,8 +1349,9 @@ aside.menubar {
 }
 
 #mentor_img img{
-  border-radius: 200px;
-  width: 160px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
 }
 
 
