@@ -17,6 +17,7 @@
 html,
 body {
   overflow-x: hidden;
+  user-select: none;
 }
 body {
   background-color: #08080a;
@@ -364,7 +365,7 @@ aside.menubar {
   cursor: pointer;
 }
 #landing .buttons .discord_button_mobile {
-  width:35px;
+  width: 35px;
   background-color: #fff;
   height: 44px;
   border-radius: 4px;
@@ -835,8 +836,8 @@ aside.menubar {
     visibility: visible;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  .d_none{
-    display:none;
+  .d_none {
+    display: none;
   }
   aside.menubar-open ul a:hover,
   aside.menubar-open ul a:active,
@@ -844,7 +845,7 @@ aside.menubar {
     color: #ee6c4d;
     outline: 0px;
   }
-  aside ul{
+  aside ul {
     list-style-type: none;
     font-size: 30px;
     line-height: 50px;
@@ -1315,31 +1316,30 @@ aside.menubar {
   }
 }
 
-
 /******************************************************* Mentor Section ********************************************************************/
-#mentors{
+#mentors {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 40px;
 }
 
-#mentors_wrapper{
+#mentors_wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 25px;
 }
 
-#mentors_wrapper>div{
+#mentors_wrapper > div {
   width: 20%;
   margin: 16px;
   justify-content: space-around;
   text-align: center;
 }
 
-#mentors>h1{
-  font-size: 3.0rem;
+#mentors > h1 {
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 10px;
   margin-left: 0;
@@ -1347,7 +1347,7 @@ aside.menubar {
   color: rgb(238, 80, 23);
 }
 
-#mentors>p{
+#mentors > p {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
@@ -1356,33 +1356,30 @@ aside.menubar {
   font-size: 100%;
 }
 
-#mentor_img img{
+#mentor_img img {
   border-radius: 50%;
   width: 140px;
   height: 140px;
 }
 
-
 @media (max-width: 740px) {
-  #mentors_wrapper>div{
+  #mentors_wrapper > div {
     width: 25%;
   }
-  
 }
 
 @media (max-width: 540px) {
-  #mentors_wrapper>div{
+  #mentors_wrapper > div {
     width: 35%;
   }
 }
 @media (max-width: 480px) {
-  #mentors_wrapper>div{
+  #mentors_wrapper > div {
     width: 90%;
   }
 }
 @media (max-width: 320px) {
-  #mentors_wrapper>div{
+  #mentors_wrapper > div {
     width: 100%;
   }
-  
 }
