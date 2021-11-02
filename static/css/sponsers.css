@@ -25,6 +25,7 @@
 }
 .sponsors-alpha,
 .sponsors-beta,
+.sponsors-gold,
 .sponsors-gamma,
 .sponsors-delta,
 .sponsor-nova {
@@ -41,20 +42,24 @@
 .beta-images,
 .gamma-images,
 .delta-images,
-.nova-images {
+.nova-images,
+.gold-images {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 .alpha-images img,
-.beta-images img {
+.beta-images img,
+.gold-images img {
   height: 40px;
   width: 100px;
   margin-right: 3%;
   margin-top: 20px;
 }
+
 .alpha-images,
-.beta-images {
+.beta-images,
+.gold-images {
   justify-content: space-around;
 }
 .sponsors-alpha {
@@ -77,14 +82,29 @@
   border-left: 2px solid #4285f4;
   transition: all 0.5s ease-in-out;
 }
+.sponsors-gold {
+  border-left: 2px solid #eedb35;
+  transition: all 0.5s ease-in-out;
+}
 .beta-title {
   color: #4285f4;
+}
+.gold-title {
+  color: #eedb35;
 }
 .sponsors-beta:hover {
   background-color: black;
   border-right: 2px solid #4285f4;
   border-top: 2px solid #4285f4;
   border-bottom: 2px solid #4285f4;
+  border-left: none;
+}
+
+.sponsors-gold:hover {
+  background-color: black;
+  border-right: 2px solid #eedb35;
+  border-top: 2px solid #eedb35;
+  border-bottom: 2px solid #eedb35;
   border-left: none;
 }
 
@@ -226,6 +246,7 @@
 .beta-title,
 .gamma-title,
 .delta-title,
+.gold-title,
 .authentication-title,
 .community-title {
   font-family: poppins;
