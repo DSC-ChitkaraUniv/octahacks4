@@ -74,6 +74,17 @@
   /* transition: all 0.5s ease-in-out; */
 }
 
+.about_high_2 {
+  color: #db9c19;
+  font-weight: 600;
+  font-size: large;
+}
+.about_high_1 {
+  color: rgb(243 65 16);
+  font-weight: 600;
+  font-size: large;
+}
+
 .prize_section_card:nth-child(even) {
   border: 3px solid rgb(243 65 16);
 }

@@ -194,10 +194,10 @@
   margin-right: 0;
   justify-content: space-evenly;
 }
+
 .partner {
   margin-top: 50px;
-  width: 150px;
-  height: 50px;
+  width: 100px;
 }
 .authentication,
 .community {
