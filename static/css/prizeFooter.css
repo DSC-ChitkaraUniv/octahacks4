@@ -104,10 +104,16 @@
   transform: scale(1.2);
 }
 .prize_section_card h1 {
-  padding-top: 35%;
+  /* padding-top: 20%; */
   font-weight: 900;
   font-size: 4rem;
 }
+.prize_section_card h2 {
+  font-weight: 600;
+  font-size: x-large;
+  padding-top: 20%;
+}
+
 .prize_section_card p {
   color: #fff;
   font-size: 1.2rem;
