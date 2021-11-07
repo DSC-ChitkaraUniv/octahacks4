@@ -30,3 +30,9 @@ $(document).on("click", 'a[href^="#"]', function (e) {
     document.querySelector("body").classList.remove("blur");
   }
 });
+
+function scrollTop() {
+  console.log("here");
+  $("body, html").animate({ scrollTop: 0 }, 1200);
+}
+$("#scroll_to_top").on("click", scrollTop);
