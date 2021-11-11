@@ -1248,6 +1248,9 @@ aside.menubar {
   filter: blur(25px);
   position: relative;
 }
+#judge {
+  filter: blur(0px) !important;
+}
 #judges #judges_wrapper > div > div:last-child {
   width: 100%;
   margin-left: 15px;
